@@ -7,6 +7,26 @@
 
 
 
+body { height: 100%; }
+
+img { border-radius: 13px; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+  background-color: #157fdb;
+  border-top: 2px solid rgba(0, 0, 0, 0.829);
+  text-shadow: 1px 0px #0169C7;
+}
+.copyleft { display: inline-block; transform: rotate(180deg); }
+
+a:link, a:visited { text-decoration: none; }
+
+
+
 header {
   border-bottom: 1px solid black;
   font-size: larger;
@@ -16,12 +36,7 @@ header {
   display: flex;
 }
 
-img[name="head-logo"] {
-  margin-left: 2%;
-  margin-top: 1%;
-  height: 125px;
-  width: 135px;
-}
+img[name="head-logo"] { margin-left: 2%; margin-top: 1%; height: 125px; width: 135px; }
 
 h1[id="tlt-head"] {
   margin-left: 1%;
@@ -35,34 +50,37 @@ h1[id="tlt-head"] {
 button {
   height: 35%;
   margin-top: 3%;
+  margin-left: 53%;
   background-color: rgba(255, 255, 255, 0.76);
   color: #0169C7;
   text-shadow: 1px 2px #c6b98e;
   font-size: 95%;
   font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
-  margin-left: 4%;
   border: none;
   width: 9%;
   border-radius: 10px;
+  transition: 0.3s linear;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #157fdb;
+  color: whitesmoke;
+  text-shadow: none;
+  border: 2px #0169C7 solid;
 }
 
-h1[id="opt-icon"] { transform: translateY(-11px);}
 button[name="opitions"] {
   width: 3%;
   border-radius: 40%;
   transform: rotate(90deg);
   margin-left: 3%;
-  margin-top: 40px;  
+  margin-top: 3%;
 }
+h1[id="opt-icon"] { transform: translateY(-11px); }
 
-button:hover {
-  cursor: pointer;
-  background-color: #157fdb;
-  color: whitesmoke;
-  text-shadow: none;  
-  transition: 0.3s;
-  border: 2px #0169C7 solid;
-} 
+
+
+
 
 
 
@@ -140,25 +158,3 @@ button:hover {
   font-size: smaller;   
 }
 
-
-
-
-
-
-
-
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: small;
-  background-color: chocolate;
-  text-shadow: 2px 1px 0 salmon;
-  border-top: 2px solid;
-  border-color: rgba(0, 0, 0, 0.829);
-}
-.copyleft {
-  display: inline-block;
-  transform: rotate(180deg);
-}
