@@ -165,6 +165,9 @@ a[class="home-links"]:hover { color: whitesmoke; text-shadow: none; }
 .sites:hover {
   border: 1px solid;
   cursor: pointer;
+  color: whitesmoke;
+  text-shadow: none;
+  background-color: #157fdb;
 }
 
 h4[id="subhd-channels"] {

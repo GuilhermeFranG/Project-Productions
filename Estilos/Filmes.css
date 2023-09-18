@@ -38,12 +38,19 @@ header {
   display: flex;
 }
 
-img[name="head-logo"] {
-  margin-left: 2%;
-  margin-top: 1%;
-  height: 125px;
-  width: 135px;
+img[name="head-logo"] { margin-left: 2%; margin-top: 1%; height: 125px; width: 135px; }
+
+img[name="boo"] {
+  opacity: 0.0;
+  width: 10%;
+  height: 45%;
+  margin-top: 4%;
+  margin-left: 22%;
+  margin-right: 22%;
+  transition: 0.1s linear;
 }
+
+img[name="boo"]:hover { opacity: 1; transform: matrix(10, 0, 0, 10, 0, 150); }
 
 h1[id="tlt-head"] {
   margin-left: 1%;
@@ -62,29 +69,31 @@ button {
   text-shadow: 1px 2px #c6b98e;
   font-size: 95%;
   font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
-  margin-left: 4%;
   border: none;
   width: 9%;
   border-radius: 10px;
+  transition: 0.3s linear;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #157fdb;
+  color: whitesmoke;
+  text-shadow: none;
+  border: 2px #0169C7 solid;
 }
 
-h1[id="opt-icon"] { transform: translateY(-11px);}
 button[name="opitions"] {
   width: 3%;
   border-radius: 40%;
   transform: rotate(90deg);
   margin-left: 3%;
-  margin-top: 40px;  
+  margin-top: 3%;
 }
+h1[id="opt-icon"] { transform: translateY(-11px); }
 
-button:hover {
-  cursor: pointer;
-  background-color: #157fdb;
-  color: whitesmoke;
-  text-shadow: none;  
-  transition: 0.3s;
-  border: 2px #0169C7 solid;
-} 
+
+
+
 
 
 
