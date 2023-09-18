@@ -7,6 +7,28 @@
 
 
 
+body { height: 100%; }
+
+img { border-radius: 13px; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+  background-color: #157fdb;
+  border-top: 2px solid rgba(0, 0, 0, 0.829);
+  text-shadow: 1px 0px #0169C7;
+}
+.copyleft { display: inline-block; transform: rotate(180deg); }
+
+a:link, a:visited { text-decoration: none; }
+
+
+
+
+
 header {
   border-bottom: 1px solid black;
   font-size: larger;
@@ -140,25 +162,3 @@ button:hover {
   font-size: smaller;   
 }
 
-
-
-
-
-
-
-
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: small;
-  background-color: chocolate;
-  text-shadow: 2px 1px 0 salmon;
-  border-top: 2px solid;
-  border-color: rgba(0, 0, 0, 0.829);
-}
-.copyleft {
-  display: inline-block;
-  transform: rotate(180deg);
-}
