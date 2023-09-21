@@ -1,13 +1,8 @@
-* {
-
-  margin: 0;
-  padding: 0;
-
-}
+* { margin: 0; padding: 0; }
 
 
 
-body { height: 100%; }
+body { height: 100%; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 img { border-radius: 13px; }
 
@@ -16,7 +11,7 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-size: small;
+  font-size: x-small;
   background-color: #157fdb;
   border-top: 2px solid rgba(0, 0, 0, 0.829);
   text-shadow: 1px 0px #0169C7;
@@ -59,20 +54,18 @@ h1[id="tlt-head"] {
   font-size: 65px;
 }
 
-button {
+.head-btn { 
+  transition: 0.3s linear; 
   height: 35%;
   margin-top: 3%;
+  text-shadow: 1px 2px #c6b98e;
   background-color: rgba(255, 255, 255, 0.76);
   color: #0169C7;
-  text-shadow: 1px 2px #c6b98e;
-  font-size: 95%;
+  font-size: 93%;
   font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
   border: none;
-  width: 9%;
-  border-radius: 10px;
-  transition: 0.3s linear;
 }
-button:hover {
+.head-btn:hover {
   cursor: pointer;
   background-color: #157fdb;
   color: whitesmoke;
@@ -80,19 +73,26 @@ button:hover {
   border: 2px #0169C7 solid;
 }
 
+button[name="service"] {
+  width: 9%;
+  border-radius: 10px;  
+}
 button[name="opitions"] {
   width: 3%;
   border-radius: 40%;
   transform: rotate(90deg);
   margin-left: 3%;
-  margin-top: 3%;
 }
-h1[id="opt-icon"] { transform: translateY(-11px); }
+h1[id="opt-icon"] { transform: translateY(-12px); }
 
 
 
-
-main { height: 100%; background-color: whitesmoke; border-top: 3px solid black; }
+main { 
+  height: 650px; 
+  background-color: whitesmoke; 
+  border-top: 3px solid black; 
+  padding-bottom: 10%;
+}
 
 #home { width: 80%; float: left; text-align: center; margin-left: 2%;}
 
@@ -111,6 +111,7 @@ main { height: 100%; background-color: whitesmoke; border-top: 3px solid black; 
   padding-bottom: 10px;
   padding-top: 10px;
   border-bottom: 1px solid grey;
+  font-size: small;
 }
 
 #homepainel { width: 82%; float: left;  }
@@ -176,6 +177,7 @@ h4[id="subhd-channels"] {
   text-shadow: 1px 0px grey;
   color: #0169C7;
   border-bottom: 1px solid grey;
+  font-size: smaller;
 }
 
 .button-channels {
@@ -190,12 +192,12 @@ h4[id="subhd-channels"] {
 
 
 
-
 section[name="about"] {
   height: 500px;
   width: 100%;
   margin-top: 2%;
   margin-bottom: 15%;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 img[name="back-abt"] {
@@ -316,12 +318,13 @@ small { font-size: 40px; padding-left: 24% }
 
 
 
+
 #category {
   width: 100%;
   background-color: whitesmoke;
   height: 500px;
   border-top: 1px solid;
-  margin-top: 100%;
+  margin-top: 3%;
   padding-top: 2%;
 }
 
@@ -364,14 +367,13 @@ a[class="opt-links"]:hover { color: rgb(28, 28, 252); }
 
 
 
-
-
 #credits {
   height: 80px;
   background-color: rgba(0, 0, 0, 0.808);
   border-top: 1px solid;
   border-color: black;
   width: 100%;
+  font-size: small;
 }
 
 .menu { list-style: none; float: left; }
@@ -411,3 +413,53 @@ a[class="opt-links"]:hover { color: rgb(28, 28, 252); }
 
 .menu li ul li { border: 1px solid whitesmoke; display: block; width: 100%; }
 
+
+
+
+
+aside {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  padding-top: 10%;
+  border-top: 1px solid grey;
+}
+
+aside h2 {
+  border-bottom: 1px solid grey;
+  margin-top: 5%;
+  padding-bottom: 2%;
+  width: 50%;
+  margin-left: 2%
+}
+
+.last-news {
+  width: 50%;
+  margin: 2%;
+  margin-top: 4%;
+  display: flex;
+  padding-bottom: 3%;
+  border-bottom: 1px solid grey;
+}
+
+.lnw-fig { height: 160px; width: 250px ; margin-left: 2%; }
+
+.lnw-links { margin: 6%; font-size: large; }
+
+button[name="more"] {
+  font-size: large;
+  margin: 4%;
+  width: 30%;
+  padding: 1%;
+  color: whitesmoke;
+  background-color: #157fdb;
+  border-radius: 10px;
+  border: none;
+  transition: 0.5s;
+}
+button[name="more"]:hover {
+  background-color: #3e92ff;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  cursor: pointer;
+}
