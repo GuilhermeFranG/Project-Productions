@@ -33,18 +33,6 @@ header {
 
 img[name="head-logo"] { margin-left: 2%; margin-top: 1%; height: 125px; width: 135px; }
 
-img[name="boo"] {
-  opacity: 0.0;
-  width: 10%;
-  height: 45%;
-  margin-top: 4%;
-  margin-left: 22%;
-  margin-right: 22%;
-  transition: 0.1s linear;
-}
-
-img[name="boo"]:hover { opacity: 1; transform: matrix(10, 0, 0, 10, 0, 150); }
-
 h1[id="tlt-head"] {
   margin-left: 1%;
   margin-top: 30px;
@@ -73,16 +61,8 @@ h1[id="tlt-head"] {
   border: 2px #0169C7 solid;
 }
 
-button[name="service"] {
-  width: 9%;
-  border-radius: 10px;  
-}
-button[name="opitions"] {
-  width: 3%;
-  border-radius: 40%;
-  transform: rotate(90deg);
-  margin-left: 3%;
-}
+button[name="service"] { width: 9%; border-radius: 10px; margin-left: 54%; }
+button[name="opitions"] { width: 3%; border-radius: 40%; transform: rotate(90deg); margin-left: 3%;}
 h1[id="opt-icon"] { transform: translateY(-12px); }
 
 
@@ -193,11 +173,11 @@ h4[id="subhd-channels"] {
 
 
 section[name="about"] {
-  height: 500px;
+  height: 550pt;
+  padding-top: 2%;
   width: 100%;
-  margin-top: 2%;
-  margin-bottom: 15%;
   font-family: 'Times New Roman', Times, serif;
+  background-image: linear-gradient(whitesmoke,#0169C7);
 }
 
 img[name="back-abt"] {
@@ -206,40 +186,32 @@ img[name="back-abt"] {
   margin-top: 3%;
   height: 380px;
   width: 70%;
-  opacity: 0.2;
+  opacity: 0.1;
   border-radius: 15px;
-  border-color: whitesmoke;
-  border: 10px solid;
 }
 
-.title-abt {
-  margin-left: 35px;
-  width: 50%;
-  text-shadow: 3px 2px lightblue;
-}
-h1[class=title-abt] { margin-top: 10px;  height: 45px; font-size: 38px; }
-h3[class=title-abt] { margin-top: 120px; height: 30px; }
+.title-abt { margin-left: 35px; width: 50%; text-shadow: 2px 1px grey; }
+h1[class=title-abt] { margin-top: 60px;  height: 50px; font-size: 38px; }
+h3[class=title-abt] { margin-top: 140px; height: 35px; font-size: 20px; }
 
 .info {
   position: absolute;
   width: 40%;
   margin: 1%;
   margin-top: 1%;
-  text-shadow: 2px 2px lightblue;
-  font-size: 85%;
+  text-shadow: 2px 1px rgb(153, 153, 153);
+  font-size: 16px;
+  font-weight: bolder;
 }
 p { margin: 1%; }
 
 center {
-  margin-top: 40px;
-  margin-right: 10px;
-  margin-bottom: 55px;
   font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
   font-size: medium;
   opacity: 0.7;
   color: #000080;
   width: 50%;
-  margin-left: 23%;
+  margin-left: 25%;
   transition: 0.4s linear;
   border-radius: 20px;
   background-color: whitesmoke;
