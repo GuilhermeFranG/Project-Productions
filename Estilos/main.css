@@ -31,9 +31,9 @@ header {
   display: flex;
 }
 
-img[name="head-logo"] { margin-left: 2%; margin-top: 1%; height: 125px; width: 135px; }
+header img { margin-left: 2%; margin-top: 1%; height: 125px; width: 135px; }
 
-h1[id="tlt-head"] {
+header h1 {
   margin-left: 1%;
   margin-top: 30px;
   color: #0169C7;
@@ -62,9 +62,14 @@ h1[id="tlt-head"] {
 }
 
 button[name="service"] { width: 9%; border-radius: 10px; margin-left: 54%; }
-button[name="opitions"] { width: 3%; border-radius: 40%; transform: rotate(90deg); margin-left: 3%;}
-h1[id="opt-icon"] { transform: translateY(-12px); }
-
+button[name="opitions"] { 
+  width: 3%; 
+  border-radius: 40%; 
+  transform: rotate(90deg); 
+  margin-left: 3%;
+  font-size: larger;
+}
+header h2 { transform: translateY(-10px); }
 
 
 main { 
@@ -109,7 +114,7 @@ main {
   padding-bottom: 8px;
 }
 
-img[class="img-nw"] {
+.img-nws {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom: 1px solid;
@@ -118,20 +123,20 @@ img[class="img-nw"] {
   margin-bottom: 10%;
 }
 
-.home-links {
+.news-links {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: smaller;
   text-align: center;
 }
 
-a:link[class="home-links"], a:visited[class="home-links"] {
+a:link[class="news-links"], a:visited[class="news-links"] {
   text-shadow: 3px 2px #157fdb;
   color: black;
   transition: 0.3s linear;
 }
 
-a:link:active[class="home-links"], a:visited:active[class="home-links"] { color: lightblue; }
-a[class="home-links"]:hover { color: whitesmoke; text-shadow: none; }
+a:link:active[class="news-links"], a:visited:active[class="news-links"] { color: lightblue; }
+a[class="news-links"]:hover { color: whitesmoke; text-shadow: none; }
 
 .sites {
   margin: 15px;
@@ -141,7 +146,7 @@ a[class="home-links"]:hover { color: whitesmoke; text-shadow: none; }
   padding-top: 5%;
   margin-right: 30%;
   border-radius: 20px;
-  transition: 0.5s;
+  transition: 0.5s; 
 }
 .sites:hover {
   border: 1px solid;
@@ -150,8 +155,9 @@ a[class="home-links"]:hover { color: whitesmoke; text-shadow: none; }
   text-shadow: none;
   background-color: #157fdb;
 }
+.img-sts { height: 40px; width: 60px;}
 
-h4[id="subhd-channels"] {
+#channelspainel h4 {
   padding-bottom: 15%;
   margin-top: 20%;
   text-shadow: 1px 0px grey;
@@ -159,7 +165,6 @@ h4[id="subhd-channels"] {
   border-bottom: 1px solid grey;
   font-size: smaller;
 }
-
 .button-channels {
   border-radius: 1%;
   display: flex; flex-wrap: wrap;
@@ -180,7 +185,7 @@ section[name="about"] {
   background-image: linear-gradient(whitesmoke,#0169C7);
 }
 
-img[name="back-abt"] {
+section[name="about"] img {
   float: right;
   margin-right: 15px;
   margin-top: 3%;
@@ -290,17 +295,15 @@ small { font-size: 40px; padding-left: 24% }
 
 
 
-
 #category {
   width: 100%;
   background-color: whitesmoke;
   height: 500px;
   border-top: 1px solid;
-  margin-top: 3%;
   padding-top: 2%;
 }
 
-h3[id="head-ctg"] {
+#category h3 {
   margin-left: 3%;
   height: 20px;
   text-shadow: 2px 2px lightblue;
@@ -320,9 +323,9 @@ h3[id="head-ctg"] {
   padding-right: 2%;
 }
 
-.options { margin-bottom: 40px; }
+#list li { margin-bottom: 40px; }
 
-a[class="opt-links"]:link, a[class="opt-links"]:visited {
+a[class="pages-links"]:link, a[class="pages-links"]:visited {
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.3s linear;
@@ -333,8 +336,8 @@ a[class="opt-links"]:link, a[class="opt-links"]:visited {
 
 }
 
-a[class="opt-links"]:link:active, a[class="opt-links"]:visited:active { color: #0169C7; }
-a[class="opt-links"]:hover { color: rgb(28, 28, 252); }
+a[class="pages-links"]:link:active, a[class="pages-links"]:visited:active { color: #0169C7; }
+a[class="pages-links"]:hover { color: rgb(28, 28, 252); }
 
 
 
@@ -392,8 +395,8 @@ a[class="opt-links"]:hover { color: rgb(28, 28, 252); }
 aside {
   width: 100%;
   height: 100%;
-  background-color: whitesmoke;
   padding-top: 10%;
+  padding-bottom: 2%;
   border-top: 1px solid grey;
 }
 
@@ -418,7 +421,7 @@ aside h2 {
 
 .lnw-links { margin: 6%; font-size: large; }
 
-button[name="more"] {
+aside button {
   font-size: large;
   margin: 4%;
   width: 30%;
@@ -429,7 +432,7 @@ button[name="more"] {
   border: none;
   transition: 0.5s;
 }
-button[name="more"]:hover {
+aside button:hover {
   background-color: #3e92ff;
   color: white;
   text-shadow: 1px 1px 1px black;
