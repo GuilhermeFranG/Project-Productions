@@ -22,6 +22,7 @@ a:link, a:visited { text-decoration: none; }
 
 
 
+
 header {
   border-bottom: 1px solid black;
   font-size: larger;
@@ -72,6 +73,8 @@ button[name="opitions"] {
 header h2 { transform: translateY(-10px); }
 
 
+
+
 main { 
   height: 650px; 
   background-color: whitesmoke; 
@@ -99,14 +102,20 @@ main {
   font-size: small;
 }
 
-#homepainel { width: 82%; float: left;  }
+#homepainel { 
+  width: 81%; 
+  float: left;  
+  border-right: 1px solid grey; 
+  margin-top: 1%;
+  padding-right: 1%;
+}
 
-#channelspainel {width: 13%;  padding-left: 5%; }
+#channelspainel {width: 12%;  padding-left: 5%; }
 
 #channelspainel, #homepainel { display: flex; flex-wrap: wrap; height: 535px; }
 
 .news {
-  width: 220px;
+  width: 210px;
   margin: 25px;
   border: 2px solid;
   background-color: #0169C7;
@@ -119,7 +128,7 @@ main {
   border-bottom-right-radius: 0;
   border-bottom: 1px solid;
   height: 100px;
-  width: 220px;
+  width: 210px;
   margin-bottom: 10%;
 }
 
@@ -174,6 +183,7 @@ a[class="news-links"]:hover { color: whitesmoke; text-shadow: none; }
   padding-top: 5px;
   padding-left: 10%;
 }
+
 
 
 
@@ -295,6 +305,7 @@ small { font-size: 40px; padding-left: 24% }
 
 
 
+
 #category {
   width: 100%;
   background-color: whitesmoke;
@@ -391,11 +402,10 @@ a[class="pages-links"]:hover { color: rgb(28, 28, 252); }
 
 
 
-
 aside {
   width: 100%;
   height: 100%;
-  padding-top: 10%;
+  padding-top: 9%;
   padding-bottom: 2%;
   border-top: 1px solid grey;
 }
@@ -411,15 +421,31 @@ aside h2 {
 .last-news {
   width: 50%;
   margin: 2%;
-  margin-top: 4%;
-  display: flex;
+  margin-top: 2%;
   padding-bottom: 3%;
   border-bottom: 1px solid grey;
 }
 
-.lnw-fig { height: 160px; width: 250px ; margin-left: 2%; }
+.ltnw-links { display: flex; }
 
-.lnw-links { margin: 6%; font-size: large; }
+aside a img { height: 170px; width: 240px ; margin-left: 3%; }
+
+aside a h6 { 
+  font-size: medium;
+  margin-top: 9%;
+  transition: 0.4s;
+  color: black;
+  transform: translateX(-9%);
+}
+
+aside a h5 { margin-top: 6%; margin-left: 3%; width: 5%; }
+aside a h5[name="C"] {color: #000080;}
+aside a h5[name="T"] {color: darkcyan;}
+aside a h5[name="J"] {color: crimson;}
+aside a h5[name="F"] {color: rgb(105, 211, 0);}
+aside a h5[name="E"] {color: deeppink;}
+
+aside a h6:hover { color: #0169C7; }
 
 aside button {
   font-size: large;
