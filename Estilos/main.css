@@ -120,14 +120,13 @@ main {
   border: 2px solid;
   background-color: #0169C7;
   border-radius: 15px;
-  padding-bottom: 8px;
 }
 
 .img-nws {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom: 1px solid;
-  height: 100px;
+  height: 120px;
   width: 210px;
   margin-bottom: 10%;
 }
@@ -188,8 +187,8 @@ a[class="news-links"]:hover { color: whitesmoke; text-shadow: none; }
 
 
 section[name="about"] {
-  height: 550pt;
-  padding-top: 2%;
+  height: 600pt;
+  padding-top: 3%;
   width: 100%;
   font-family: 'Times New Roman', Times, serif;
   background-image: linear-gradient(whitesmoke,#0169C7);
@@ -227,6 +226,7 @@ center {
   color: #000080;
   width: 50%;
   margin-left: 25%;
+  margin-bottom: 3%;
   transition: 0.4s linear;
   border-radius: 20px;
   background-color: whitesmoke;
