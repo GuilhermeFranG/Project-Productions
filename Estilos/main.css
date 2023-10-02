@@ -16,7 +16,6 @@ footer {
   border-top: 2px solid rgba(0, 0, 0, 0.829);
   text-shadow: 1px 0px #0169C7;
 }
-.copyleft { display: inline-block; transform: rotate(180deg); }
 
 a:link, a:visited { text-decoration: none; }
 
@@ -290,8 +289,8 @@ center:hover {
   }
 }
 
-b { font-size: 40px; padding-right: 24%; }
-small { font-size: 40px; padding-left: 24% }
+b {font-size: 40px; text-shadow: none; padding-right: 24%;}
+small {font-size: 40px; text-shadow: none; padding-left: 24%}
 
 #off {
   text-align: center;
@@ -444,6 +443,8 @@ aside a h5[name="T"] {color: darkcyan;}
 aside a h5[name="J"] {color: crimson;}
 aside a h5[name="F"] {color: rgb(105, 211, 0);}
 aside a h5[name="E"] {color: deeppink;}
+aside a h5[name="H"] {color: orangered;}
+aside a h5[name="W"] {color: darkgreen;}
 
 aside a h6:hover { color: #0169C7; }
 
