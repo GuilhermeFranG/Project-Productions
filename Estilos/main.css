@@ -31,15 +31,15 @@ header {
   display: flex;
 }
 
-header img { margin-left: 2%; margin-top: 1%; height: 125px; width: 135px; }
+header img { margin-left: 2%; margin-top: 1%; height: 125px; width: 155px; }
 
 header h1 {
-  margin-left: 1%;
-  margin-top: 30px;
+  margin-left: 2%;
+  margin-top: 25px;
   color: #0169C7;
-  text-shadow: 1px 3px #c6b98e;
+  text-shadow: 1px 3px #f4e601;
   font-family: 'Qwitcher Grypen', cursive;
-  font-size: 65px;
+  font-size: 80px;
 }
 
 .head-btn { 
@@ -61,7 +61,7 @@ header h1 {
   border: 2px #0169C7 solid;
 }
 
-button[name="service"] { width: 9%; border-radius: 10px; margin-left: 54%; }
+button[name="service"] { width: 9%; border-radius: 10px; margin-left: 48%; }
 button[name="opitions"] { 
   width: 3%; 
   border-radius: 40%; 
@@ -69,7 +69,7 @@ button[name="opitions"] {
   margin-left: 3%;
   font-size: larger;
 }
-header h2 { transform: translateY(-10px); }
+header h2 { transform: translateY(-11px); }
 
 
 
@@ -143,7 +143,7 @@ a:link[class="news-links"], a:visited[class="news-links"] {
 }
 
 a:link:active[class="news-links"], a:visited:active[class="news-links"] { color: lightblue; }
-a[class="news-links"]:hover { color: whitesmoke; text-shadow: none; }
+a[class="news-links"]:hover { color: whitesmoke; text-shadow: 0px 0px 2px; box-shadow: 0; }
 
 .sites {
   margin: 15px;
@@ -156,12 +156,12 @@ a[class="news-links"]:hover { color: whitesmoke; text-shadow: none; }
   transition: 0.5s; 
 }
 .sites:hover {
-  border: 1px solid;
   cursor: pointer;
-  color: whitesmoke;
-  text-shadow: none;
-  background-color: #157fdb;
+  box-shadow: 0;
+  -moz-box-shadow: 1px 5px 10px 0 #3b8ed6;
+  -webkit-box-shadow: 1px 5px 10px 0 #3b8ed6;
 }
+
 .img-sts { height: 40px; width: 60px;}
 
 #channelspainel h4 {
@@ -438,6 +438,11 @@ aside a h6 {
   color: black;
   transform: translateX(-9%);
 }
+aside a h6:hover { 
+  color: #0169C7; 
+  box-shadow: 0;
+  text-shadow: 0px 1px 5px #5fb4ff;
+}
 
 aside a h5 { margin-top: 6%; margin-left: 3%; width: 5%; }
 aside a h5[name="C"] {color: #000080;}
@@ -448,7 +453,6 @@ aside a h5[name="E"] {color: deeppink;}
 aside a h5[name="H"] {color: orangered;}
 aside a h5[name="W"] {color: darkgreen;}
 
-aside a h6:hover { color: #0169C7; }
 
 aside button {
   font-size: large;
