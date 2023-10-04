@@ -12,7 +12,7 @@ footer {
   width: 100%;
   text-align: center;
   font-size: x-small;
-  background-color: #157fdb;
+  background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
   border-top: 2px solid rgba(0, 0, 0, 0.829);
   text-shadow: 1px 0px #0169C7;
 }
@@ -250,16 +250,16 @@ center:hover {
   }
 
   20% {
-    color: red;
+    color: tomato;
     border-color: crimson;
     background-color: darkred;
-    text-shadow: 1px 1px tomato;
+    text-shadow: 1px 1px red;
   }
 
   30% {
-    color: darkorange;
+    color: yellow;
     border-color: gold;
-    background-color: darkgoldenrod;
+    background-color: darkorange;
     text-shadow: 1px 1px goldenrod;
   }
 
@@ -297,7 +297,7 @@ small {font-size: 40px; text-shadow: none; padding-left: 24%}
 
 #category {
   width: 100%;
-  background-color: whitesmoke;
+  background-image: linear-gradient(white,whitesmoke,lightgrey,grey);
   height: 500px;
   border-top: 1px solid;
   padding-top: 2%;
@@ -344,9 +344,7 @@ a[class="pages-links"]:hover { color: rgb(28, 28, 252); }
 
 #credits {
   height: 80px;
-  background-color: rgba(0, 0, 0, 0.808);
-  border-top: 1px solid;
-  border-color: black;
+  background-image: linear-gradient(grey,rgb(50, 50, 50),black);
   width: 100%;
   font-size: small;
 }
@@ -357,11 +355,14 @@ a[class="pages-links"]:hover { color: rgb(28, 28, 252); }
   position: relative;
   float: left;
   border-right: 1px solid whitesmoke;
+  border-top: 1px solid whitesmoke;
+  padding-top: 2px  ;
   width: 251pt;
 }
 
 .menu li a {
-  color: whitesmoke;
+  color: black;
+  font-weight: bolder;
   text-decoration: none;
   padding: 5px 10px;
   display: block;
@@ -384,7 +385,10 @@ a[class="pages-links"]:hover { color: rgb(28, 28, 252); }
   width: 100%;
 }
 
-.menu li:hover ul, .menu li.over ul { display: block; background-color: rgba(0, 0, 0, 0.808); }
+.menu li:hover ul, .menu li.over ul { 
+  display: block; 
+  background-image: linear-gradient(grey,rgb(70, 70, 70)); 
+}
 
 .menu li ul li { border: 1px solid whitesmoke; display: block; width: 100%; }
 
@@ -413,7 +417,15 @@ aside h2 {
   margin-top: 2%;
   padding-bottom: 3%;
   border-bottom: 1px solid grey;
+  border-radius: 10px;
 }
+aside div[name="C"] {background-image: linear-gradient(white,lightblue,navy);}
+aside div[name="T"] {background-image: linear-gradient(white,lightcyan,lightseagreen);}
+aside div[name="J"] {background-image: linear-gradient(white,tomato,darkred);}
+aside div[name="F"] {background-image: linear-gradient(white,palegreen,lime);}
+aside div[name="E"] {background-image: linear-gradient(white,lightpink,rgb(255, 84, 255));}
+aside div[name="H"] {background-image: linear-gradient(white,coral,orange);}
+aside div[name="W"] {background-image: linear-gradient(white,lightgreen,seagreen);}
 
 .ltnw-links { display: flex; }
 
@@ -431,7 +443,7 @@ aside a h5 { margin-top: 6%; margin-left: 3%; width: 5%; }
 aside a h5[name="C"] {color: #000080;}
 aside a h5[name="T"] {color: darkcyan;}
 aside a h5[name="J"] {color: crimson;}
-aside a h5[name="F"] {color: rgb(105, 211, 0);}
+aside a h5[name="F"] {color: green;}
 aside a h5[name="E"] {color: deeppink;}
 aside a h5[name="H"] {color: orangered;}
 aside a h5[name="W"] {color: darkgreen;}
