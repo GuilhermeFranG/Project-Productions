@@ -23,8 +23,8 @@ a:link, a:visited { text-decoration: none; }
 
 
 header {
-  border-top: 8px solid rgb(75, 75, 75);
-  border-bottom: 10px solid rgb(75, 75, 75);
+  border-top: 8px solid darkblue;
+  border-bottom: 10px solid darkblue;
   border-radius: 5px;
   font-size: larger;
   background-image: linear-gradient(rgb(142, 211, 235),rgb(142, 211, 235),lightblue,whitesmoke);
@@ -38,8 +38,8 @@ header img { margin-left: 1%; margin-top: 1%; height: 165px; width: 200px; }
 header h1 {
   margin-left: 2%;
   margin-top: 6%;
-  color: #0169C7;
-  text-shadow: 1px 3px whitesmoke;
+  color: #0067c6;
+  text-shadow: 1px 2px whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 35px;
 
@@ -191,7 +191,7 @@ a[class="news-links"]:hover { color: whitesmoke; text-shadow: 0px 0px 2px; box-s
 
 
 
-section[name="about"] {
+#about {
   height: 600pt;
   padding-top: 3%;
   width: 100%;
@@ -199,7 +199,7 @@ section[name="about"] {
   background-image: linear-gradient(rgb(233, 233, 233),lightblue,#0169C7);
 }
 
-section[name="about"] img {
+#about img {
   float: right;
   margin-right: 15px;
   margin-top: 3%;
@@ -254,42 +254,36 @@ center:hover {
   1% {
     color: #000080;
   }
-
   20% {
     color: tomato;
     border-color: crimson;
     background-color: darkred;
     text-shadow: 1px 1px red;
   }
-
   30% {
     color: yellow;
     border-color: gold;
     background-color: darkorange;
     text-shadow: 1px 1px goldenrod;
   }
-
   50% {
     color: green;
     border-color: chartreuse;
     background-color: yellowgreen;
     text-shadow: 1px 1px springgreen;
   }
-
   70% {
     color: deeppink;
     border-color: darkmagenta;
     background-color: violet;
     text-shadow: 1px 1px slateblue;
   }
-
   80% {
     color: #000080;
     border-color: aqua;
     background-color: #157fdb;
     text-shadow: 1px 1px turquoise;
   }
-
   100% {
     color: #000080;
   }
