@@ -23,31 +23,36 @@ a:link, a:visited { text-decoration: none; }
 
 
 header {
-  border-bottom: 1px solid black;
+  border-top: 8px solid rgb(75, 75, 75);
+  border-bottom: 10px solid rgb(75, 75, 75);
+  border-radius: 5px;
   font-size: larger;
-  background-image: url('../img/paisagem.png');
+  background-image: linear-gradient(rgb(142, 211, 235),rgb(142, 211, 235),lightblue,whitesmoke);
   width: 100%;
-  height: 150px;
+  height: 190px;
   display: flex;
 }
 
-header img { margin-left: 2%; margin-top: 1%; height: 125px; width: 155px; }
+header img { margin-left: 1%; margin-top: 1%; height: 165px; width: 200px; }
 
 header h1 {
   margin-left: 2%;
-  margin-top: 25px;
+  margin-top: 6%;
   color: #0169C7;
-  text-shadow: 1px 3px #f4e601;
-  font-family: 'Qwitcher Grypen', cursive;
-  font-size: 80px;
+  text-shadow: 1px 3px whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+
 }
 
 .head-btn { 
   transition: 0.3s linear; 
   height: 35%;
-  margin-top: 3%;
-  text-shadow: 1px 2px #c6b98e;
-  background-color: rgba(255, 255, 255, 0.76);
+  margin-top: 5%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0;
+  -moz-box-shadow: 0 3px 10px 0 #3b8ed6;
+  -webkit-box-shadow: 0 3px 10px 0 #3b8ed6;
   color: #0169C7;
   font-size: 93%;
   font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
@@ -61,9 +66,10 @@ header h1 {
   border: 2px #0169C7 solid;
 }
 
-button[name="service"] { width: 9%; border-radius: 10px; margin-left: 48%; }
+button[name="service"] { width: 9%; border-radius: 10px; margin-left: 45%; height: 55px; }
 button[name="opitions"] { 
-  width: 3%; 
+  width: 3%;
+  height: 50px; 
   border-radius: 40%; 
   transform: rotate(90deg); 
   margin-left: 3%;
@@ -190,7 +196,7 @@ section[name="about"] {
   padding-top: 3%;
   width: 100%;
   font-family: 'Times New Roman', Times, serif;
-  background-image: linear-gradient(whitesmoke,#0169C7);
+  background-image: linear-gradient(rgb(233, 233, 233),lightblue,#0169C7);
 }
 
 section[name="about"] img {
@@ -336,8 +342,8 @@ a[class="pages-links"]:link, a[class="pages-links"]:visited {
 
 }
 
-a[class="pages-links"]:link:active, a[class="pages-links"]:visited:active { color: #0169C7; }
-a[class="pages-links"]:hover { color: rgb(28, 28, 252); }
+a[class="pages-links"]:link:active, a[class="pages-links"]:visited:active {color: #0169C7;}
+a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shadow: 0px 0px 1px rgb(28, 28, 252);}
 
 
 
@@ -398,7 +404,7 @@ a[class="pages-links"]:hover { color: rgb(28, 28, 252); }
 aside {
   width: 100%;
   height: 100%;
-  padding-top: 9%;
+  padding-top: 8%;
   padding-bottom: 2%;
   border-top: 1px solid grey;
 }
