@@ -2,7 +2,7 @@
 
 
 
-body { height: 100%; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 img { border-radius: 13px; }
 
@@ -42,7 +42,6 @@ header h1 {
   text-shadow: 1px 2px whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 35px;
-
 }
 
 .head-btn { 
