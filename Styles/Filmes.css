@@ -65,7 +65,7 @@ header a h1 {
   border: 2px #0169C7 solid;
 }
 
-button[name="service"] { width: 9%; border-radius: 10px; margin-left: 47%; height: 55px; }
+button[name="service"] { width: 9%; border-radius: 10px; margin-left: 50%; height: 55px; }
 button[name="opitions"] { 
   width: 3%;
   height: 50px; 
