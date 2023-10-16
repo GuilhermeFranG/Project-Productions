@@ -33,11 +33,12 @@ header {
   display: flex;
 }
 
-header img { margin-left: 1%; margin-top: 1%; height: 165px; width: 200px; }
+header a {display: flex;}
+header a img { margin-left: 3%; margin-top: 3%; height: 165px; width: 200px; }
 
-header h1 {
-  margin-left: 2%;
-  margin-top: 6%;
+header a h1 {
+  margin-left: 5%;
+  margin-top: 17%;
   color: #0067c6;
   text-shadow: 1px 2px whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -65,7 +66,7 @@ header h1 {
   border: 2px #0169C7 solid;
 }
 
-button[name="service"] { width: 9%; border-radius: 10px; margin-left: 47%; height: 55px; }
+button[name="service"] { width: 9%; border-radius: 10px; margin-left: 50%; height: 55px; }
 button[name="opitions"] { 
   width: 3%;
   height: 50px; 
