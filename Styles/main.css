@@ -87,9 +87,9 @@ main {
   padding-bottom: 10%;
 }
 
-#home { width: 80%; float: left; text-align: center; margin-left: 2%;}
+#home { width: 79%; float: left; text-align: center; margin-left: 2%;}
 
-#channels { float: right; width: 16%; margin-right: 2%; }
+#channels { float: right; width: 17%; margin-right: 2%; }
 #channels h3 {
   border-left: 1px solid grey; 
   margin-bottom: 1%;
@@ -108,16 +108,22 @@ main {
 }
 
 #homepainel { 
-  width: 81%; 
+  width: 80%; 
   float: left;  
   border-right: 1px solid grey; 
   margin-top: 1%;
   padding-right: 1%;
 }
+#channelspainel {
+  float: right;
+  width: 17%;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1%;
+}
 
-#channelspainel {width: 12%;  padding-left: 5%; }
-
-#channelspainel, #homepainel { display: flex; flex-wrap: wrap; height: 535px; }
+#channelspainel, #homepainel { display: flex; flex-wrap: wrap; }
 
 .news {
   width: 210px;
@@ -125,6 +131,7 @@ main {
   border: 2px solid;
   background-color: #0169C7;
   border-radius: 15px;
+  padding-bottom: 2%;
 }
 
 .img-nws {
@@ -136,44 +143,45 @@ main {
   margin-bottom: 10%;
 }
 
-.news-links {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: smaller;
-  text-align: center;
-}
-
 a:link[class="news-links"], a:visited[class="news-links"] {
   text-shadow: 3px 2px #157fdb;
   color: black;
   transition: 0.3s linear;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: smaller;
+  text-align: center;
 }
 
 a:link:active[class="news-links"], a:visited:active[class="news-links"] { color: lightblue; }
 a[class="news-links"]:hover { color: whitesmoke; text-shadow: 0px 0px 2px; box-shadow: 0; }
 
 .sites {
-  margin: 15px;
-  width: 140px;
-  text-align: center;
-  text-shadow: 1px 1px 0 darkgray;
+  width: 48%;
   padding-top: 5%;
-  margin-right: 30%;
-  border-radius: 20px;
+  padding-bottom: 5%;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 5%;
   transition: 0.5s; 
 }
+.sites[name="N"] {background-color: lightblue;}
+.sites[name="V"] {background-color: darkred;}
+.sites[name="S"] {background-color: #05dd05;}
+
 .sites:hover {
   cursor: pointer;
+  color: whitesmoke;
+  text-shadow: 0px 1px black;
   box-shadow: 0;
-  -moz-box-shadow: 1px 5px 10px 0 #3b8ed6;
-  -webkit-box-shadow: 1px 5px 10px 0 #3b8ed6;
+  -moz-box-shadow: 1px 5px 10px 0 #0169C7;
+  -webkit-box-shadow: 1px 5px 10px 0 #0169C7;
 }
 
-.img-sts { height: 40px; width: 60px;}
+.img-sts { height: 50px; width: 75px;}
 
 #channelspainel h4 {
-  padding-bottom: 15%;
-  margin-top: 20%;
-  text-shadow: 1px 0px grey;
+  padding-bottom: 8%;
+  margin-top: 50%;
   color: #0169C7;
   border-bottom: 1px solid grey;
   font-size: smaller;
@@ -184,9 +192,9 @@ a[class="news-links"]:hover { color: whitesmoke; text-shadow: 0px 0px 2px; box-s
   height: 25px; 
   width: 30px;
   margin: 10px;
-  padding-top: 5px;
-  padding-left: 10%;
+  padding-top: 15px;
 }
+
 
 
 
@@ -333,7 +341,6 @@ a[class="pages-links"]:link, a[class="pages-links"]:visited {
   border-left: 4px solid blue;
   margin-left: 45px;
   padding-left: 6%;
-
 }
 
 a[class="pages-links"]:link:active, a[class="pages-links"]:visited:active {color: #0169C7;}
@@ -343,8 +350,8 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 
 
 #credits {
-  height: 80px;
-  background-image: linear-gradient(grey,rgb(50, 50, 50),black);
+  height: 30px;
+  background-image: linear-gradient(blue,darkblue,#034680,#0169C7);
   width: 100%;
   font-size: small;
 }
@@ -354,14 +361,14 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 .menu li {
   position: relative;
   float: left;
-  border-right: 1px solid whitesmoke;
-  border-top: 1px solid whitesmoke;
+  border: 1px solid whitesmoke;
+  border-left: none;
   padding-top: 2px  ;
   width: 251pt;
 }
 
 .menu li a {
-  color: black;
+  color: whitesmoke;
   font-weight: bolder;
   text-decoration: none;
   padding: 5px 10px;
@@ -370,7 +377,7 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 }
 
 .menu li a:hover {
-  color: whitesmoke;
+  color: white;
   box-shadow: 0;
   -moz-box-shadow: 0 3px 10px 0 #3b8ed6;
   -webkit-box-shadow: 0 3px 10px 0 #3b8ed6;
@@ -387,7 +394,7 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 
 .menu li:hover ul, .menu li.over ul { 
   display: block; 
-  background-image: linear-gradient(grey,rgb(70, 70, 70)); 
+  background-image: linear-gradient(blue,#0169C7); 
 }
 
 .menu li ul li { border: 1px solid whitesmoke; display: block; width: 100%; }
@@ -408,7 +415,7 @@ aside h2 {
   padding-bottom: 2%;
   padding-left: 1%;
   margin-top: 4%;
-  margin-bottom: 8%;
+  margin-bottom: 5%;
   margin-left: 2%;
   width: 50%;
 }
@@ -421,21 +428,21 @@ aside h2 {
   border-bottom: 1px solid grey;
   border-radius: 10px;
 }
-aside div[name="C"] {background-image: linear-gradient(white,lightblue,navy);}
-aside div[name="T"] {background-image: linear-gradient(white,lightcyan,lightseagreen);}
-aside div[name="J"] {background-image: linear-gradient(white,tomato,darkred);}
-aside div[name="F"] {background-image: linear-gradient(white,palegreen,lime);}
-aside div[name="E"] {background-image: linear-gradient(white,lightpink,rgb(255, 84, 255));}
-aside div[name="H"] {background-image: linear-gradient(white,coral,orange);}
-aside div[name="W"] {background-image: linear-gradient(white,lightgreen,seagreen);}
+.last-news[name="C"] {background-image: linear-gradient(white,lightblue,navy);}
+.last-news[name="T"] {background-image: linear-gradient(white,lightcyan,lightseagreen);}
+.last-news[name="J"] {background-image: linear-gradient(white,tomato,darkred);}
+.last-news[name="F"] {background-image: linear-gradient(white,palegreen,lime);}
+.last-news[name="E"] {background-image: linear-gradient(white,lightpink,rgb(255, 84, 255));}
+.last-news[name="H"] {background-image: linear-gradient(white,coral,orange);}
+.last-news[name="W"] {background-image: linear-gradient(white,lightgreen,seagreen);}
 
 .ltnw-links { display: flex; }
 
-aside a img { height: 170px; width: 240px ; margin-left: 3%; }
+aside a img { height: 170px; width: 240px ; margin-left: 3%; margin-top: 5%; }
 
 aside a h6 { 
   font-size: medium;
-  margin-top: 9%;
+  margin-top: 15%;
   transition: 0.4s;
   color: black;
   transform: translateX(-9%);
@@ -446,7 +453,7 @@ aside a h6:hover {
   text-shadow: 0px 1px 5px #5fb4ff;
 }
 
-aside a h5 { margin-top: 6%; margin-left: 3%; width: 5%; }
+aside a h5 { margin-top: 12%; margin-left: 3%; width: 5%; }
 aside a h5[name="C"] {color: #000080;}
 aside a h5[name="T"] {color: darkcyan;}
 aside a h5[name="J"] {color: crimson;}
@@ -454,7 +461,6 @@ aside a h5[name="F"] {color: green;}
 aside a h5[name="E"] {color: deeppink;}
 aside a h5[name="H"] {color: orangered;}
 aside a h5[name="W"] {color: darkgreen;}
-
 
 aside button {
   font-size: large;

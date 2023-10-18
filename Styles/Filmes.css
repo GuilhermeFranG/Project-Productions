@@ -21,6 +21,7 @@ a:link, a:visited { text-decoration: none; }
 
 
 
+
 header {
   border-top: 8px solid darkblue;
   border-bottom: 10px solid darkblue;
@@ -36,12 +37,18 @@ header a {display: flex;}
 header a img { margin-left: 3%; margin-top: 3%; height: 165px; width: 200px; }
 
 header a h1 {
-  margin-left: 5%;
-  margin-top: 17%;
+  margin-top: 20%;
   color: #0067c6;
   text-shadow: 1px 2px whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 35px;
+  transform: translateX(-90px);
+}
+
+header a h5 {
+  margin-top: 35%;
+  color: #01aa2c;
+  text-shadow: 1px 2px whitesmoke;
 }
 
 .head-btn { 
@@ -65,7 +72,7 @@ header a h1 {
   border: 2px #0169C7 solid;
 }
 
-button[name="service"] { width: 9%; border-radius: 10px; margin-left: 50%; height: 55px; }
+button[name="service"] { width: 9%; border-radius: 10px; margin-left: 43%; height: 55px; }
 button[name="opitions"] { 
   width: 3%;
   height: 50px; 
@@ -81,20 +88,26 @@ header h2 { transform: translateY(-11px); }
 
 main { 
   margin-top: 5%;
-  height: 650px; 
+  height: 2250pt; 
   background-color: whitesmoke; 
   border-top: 3px solid black; 
   padding-bottom: 10%;
 }
 
-#home { width: 80%; float: left; text-align: center; margin-left: 2%;}
+#home { width: 50%; float: left; margin-left: 5%; padding-left: 2%; }
 
-#channels { float: right; width: 16%; margin-right: 2%; }
+#channels { 
+  float: right; 
+  width: 30%; 
+  margin-right: 4%;
+  position: sticky;
+  top: 0;
+  right: 0; 
+}
 #channels h3 {
   border-left: 1px solid grey; 
-  margin-bottom: 1%;
   margin-top: 1%;
-  padding-left: 5%;
+  padding-left: 10%;
 }
 
 #home, #channels {
@@ -103,78 +116,113 @@ main {
   text-shadow: 1px 0px 2px grey;
   color: #05dd3b;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 30px;
   border-bottom: 1px solid grey;
   font-size: small;
 }
 
-#homepainel { 
-  width: 81%; 
-  float: left;  
-  border-right: 1px solid grey; 
-  margin-top: 1%;
-  padding-right: 1%;
+
+
+
+aside {
+  width: 50%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  margin-left: 1%;
+  float: left;
 }
 
-#channelspainel {width: 12%;  padding-left: 5%; }
-
-#channelspainel, #homepainel { display: flex; flex-wrap: wrap; height: 535px; }
-
-.news {
-  width: 210px;
-  margin: 25px;
-  border: 2px solid;
-  background-color: #0dbd39;
-  border-radius: 15px;
+.last-news {
+  width: 100%;
+  margin: 2%;
+  margin-top: 5%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid grey;
+  border-radius: 10px;
+  background-image: linear-gradient(white,palegreen,lime);
 }
 
-.img-nws {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom: 1px solid;
-  height: 120px;
-  width: 210px;
-  margin-bottom: 10%;
-}
+.ltnw-links { display: flex; }
 
-.news-links {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+aside a img { height: 150px; width: 210px ; margin-left: 3%; margin-top: 4%;}
+
+aside a h6 { 
   font-size: smaller;
-  text-align: center;
-}
-
-a:link[class="news-links"], a:visited[class="news-links"] {
-  text-shadow: 1px 0px palegreen;
+  margin-top: 15%;
+  transition: 0.4s;
   color: black;
-  transition: 0.3s linear;
+  transform: translateX(-9%);
+}
+aside a h6:hover { 
+  color: #0169C7; 
+  box-shadow: 0;
+  text-shadow: 0px 1px 5px #5fb4ff;
 }
 
-a:link:active[class="news-links"], a:visited:active[class="news-links"] { color: lightblue; }
-a[class="news-links"]:hover { color: whitesmoke; text-shadow: 0px 0px 2px; box-shadow: 0; }
+aside a h5 { margin-top: 9%; margin-left: 3%; width: 5%; color: green;}
+
+aside button {
+  font-size: large;
+  font-weight: bolder;
+  margin-left: 16%;
+  margin-top: 15%;
+  width: 70%;
+  padding: 2%;
+  color: whitesmoke;
+  background-color: #05dd3b;
+  border-radius: 10px;
+  border: none;
+  transition: 0.5s;
+}
+aside button:hover {
+  background-color: #3ac53a;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  cursor: pointer;
+}                   
 
 
+
+
+#channelspainel {
+  float: right;
+  width: 38%;  
+  display: flex; flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  right: 0; 
+  padding-top: 4%;
+}
 
 .sites {
-  margin: 15px;
-  width: 140px;
+  width: 23%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   text-align: center;
-  text-shadow: 1px 1px 0 darkgray;
-  padding-top: 5%;
-  margin-right: 30%;
-  border-radius: 20px;
+  border-radius: 15px;
+  margin-top: 5%;
   transition: 0.5s; 
 }
+.sites[name="N"] {background-color: lightblue;}
+.sites[name="V"] {background-color: darkred;}
+.sites[name="S"] {background-color: #05dd05;}
+
 .sites:hover {
   cursor: pointer;
+  color: whitesmoke;
+  text-shadow: 0px 1px black;
   box-shadow: 0;
   -moz-box-shadow: 1px 5px 10px 0 #05dd3b;
   -webkit-box-shadow: 1px 5px 10px 0 #05dd3b;
 }
 
-.img-sts { height: 40px; width: 60px;}
+.img-sts { height: 50px; width: 75px;}
 
 #channelspainel h4 {
-  padding-bottom: 15%;
+  padding-bottom: 8%;
   margin-top: 20%;
   text-shadow: 2px 2px whitesmoke;
   text-shadow: 1px 0px 2px grey;
@@ -243,8 +291,8 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 
 
 #credits {
-  height: 80px;
-  background-image: linear-gradient(grey,rgb(50, 50, 50),black);
+  height: 30px;
+  background-image: linear-gradient(green,darkgreen,#189c39,#05dd05);
   width: 100%;
   font-size: small;
 }
@@ -261,7 +309,7 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 }
 
 .menu li a {
-  color: black;
+  color: whitesmoke;
   font-weight: bolder;
   text-decoration: none;
   padding: 5px 10px;
@@ -270,7 +318,7 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 }
 
 .menu li a:hover {
-  color: whitesmoke;
+  color: white;
   box-shadow: 0;
   -moz-box-shadow: 0 3px 10px 0 #05dd3b;
   -webkit-box-shadow: 0 3px 10px 0 #05dd3b;
@@ -287,7 +335,7 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 
 .menu li:hover ul, .menu li.over ul { 
   display: block; 
-  background-image: linear-gradient(grey,rgb(70, 70, 70)); 
+  background-image: linear-gradient(green,#05dd3b); 
 }
 
 .menu li ul li { border: 1px solid whitesmoke; display: block; width: 100%; }
