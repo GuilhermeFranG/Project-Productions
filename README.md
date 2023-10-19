@@ -25,17 +25,17 @@
 ### CSS
 
 ```CSS
-Body {
+Body  {
         color: whitesmoke;
         background-color: blue;
-        }
-h1 {
-  font-size: 20px;
-  font-weight: bolder;
-}    
-p {
-  font-family: Verdana;
-}    
+  }
+h1  {
+        font-size: 20px;
+        font-weight: bolder;
+  }    
+p  {
+        font-family: Verdana;
+  }    
 ```
 
 #### ...e um pouco de JavaSCript
