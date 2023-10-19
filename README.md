@@ -20,6 +20,7 @@
   <body>
     <h1>GDT</h1>
     <p>Feito com Html e CSS.</p>
+    <h6>...e um pouco de JavaScript</h6>
   </body>
 </html>
 ```
