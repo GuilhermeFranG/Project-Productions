@@ -101,8 +101,6 @@ main {
   width: 30%; 
   margin-right: 4%;
   position: sticky;
-  top: 0;
-  right: 0; 
 }
 #channels h3 {
   border-left: 1px solid grey; 
@@ -192,8 +190,6 @@ aside button:hover {
   align-items: center;
   justify-content: center;
   position: sticky;
-  top: 0;
-  right: 0; 
   padding-top: 4%;
 }
 
