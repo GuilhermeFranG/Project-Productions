@@ -5,23 +5,42 @@
 
 ## **By GDT (2023)**
 
+### Feito com Html
+
 ```Html
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <style>
-      Body {
-        color: whitesmoke;
-        background-color: blue;
-        }
-    </style>
   </head>
   <body>
     <h1>GDT</h1>
     <p>Feito com Html e CSS.</p>
-    <h6>...e um pouco de JavaScript</h6>
+    <p>...e um pouco de JavaScript</p>
   </body>
 </html>
+```
+
+### CSS
+
+```CSS
+Body {
+        color: whitesmoke;
+        background-color: blue;
+        }
+h1 {
+  font-size: 20px;
+  font-weight: bolder;
+}    
+p {
+  font-family: Verdana;
+}    
+```
+
+#### ...e um pouco de JavaSCript
+
+```JavaSCript
+document.write(Project-Productions)
 ```
 
