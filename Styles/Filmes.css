@@ -205,13 +205,10 @@ aside button:hover {
   transition: 0.5s; 
 }
 .sites[name="N"] {background-color: lightblue;}
-.sites[name="V"] {background-color: darkred;}
 .sites[name="S"] {background-color: #05dd05;}
 
 .sites:hover {
   cursor: pointer;
-  color: whitesmoke;
-  text-shadow: 0px 1px black;
   box-shadow: 0;
   -moz-box-shadow: 1px 5px 10px 0 #05dd3b;
   -webkit-box-shadow: 1px 5px 10px 0 #05dd3b;
