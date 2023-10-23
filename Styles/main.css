@@ -214,8 +214,8 @@ a[class="news-links"]:hover { color: whitesmoke; text-shadow: 0px 0px 2px; box-s
 }
 
 .ttl-info { margin-left: 35px; width: 50%; text-shadow: 2px 1px grey; }
-h1[class=title-abt] { margin-top: 60px;  height: 50px; font-size: 38px; }
-h3[class=title-abt] { margin-top: 140px; height: 35px; font-size: 20px; }
+h1[class=ttl-info] { margin-top: 60px;  height: 50px; font-size: 38px; }
+h3[class=ttl-info] { margin-top: 140px; height: 35px; font-size: 20px; }
 
 .info {
   position: absolute;
