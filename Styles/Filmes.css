@@ -287,29 +287,32 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 
 #credits {
   height: 30px;
-  background-image: linear-gradient(green,darkgreen,#189c39,#05dd05);
+  background-image: linear-gradient(green, darkgreen, #189c39, #05dd05);
   width: 100%;
   font-size: small;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  border-left: none;
+  border-right: none;
 }
 
 .menu { list-style: none; float: left; }
 
 .menu li {
-  position: relative;
-  float: left;
-  border-right: 1px solid whitesmoke;
-  border-top: 1px solid whitesmoke;
-  padding-top: 2px  ;
-  width: 251pt;
+    position: relative;
+    float: left;
+    padding-top: 2px;
+    width: 268px;
 }
 
 .menu li a {
   color: whitesmoke;
+  border-radius: 10px;
   font-weight: bolder;
   text-decoration: none;
   padding: 5px 10px;
   display: block;
-  transition: 0.2s linear;
+  transition: 0.4s linear;
 }
 
 .menu li a:hover {
@@ -322,15 +325,23 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 
 .menu li ul {
   position: absolute;
-  bottom: 25px;
+  bottom: 86px;
   left: 0;
   display: none;
   width: 100%;
 }
 
-.menu li:hover ul, .menu li.over ul { 
-  display: block; 
-  background-image: linear-gradient(green,#05dd3b); 
+.menu li:hover ul, .menu li.over ul {
+  display: block;
+  background-image: linear-gradient(green, #05dd3b);
+  height: 0;
+  border-radius: 10px;
 }
 
-.menu li ul li { border: 1px solid whitesmoke; display: block; width: 100%; }
+.menu li ul li {
+  background-image: linear-gradient(green, #05dd3b);
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+}
