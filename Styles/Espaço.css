@@ -364,28 +364,29 @@ a[class="pages-links"]:hover {
     background-image: linear-gradient(green, darkgreen, #189c39, #05dd05);
     width: 929pt;
     font-size: small;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    border-left: none;
+    border-right: none;
 }
 
-.menu {
-    list-style: none;
-    float: left;
-}
+.menu { list-style: none; float: left; }
 
 .menu li {
     position: relative;
     float: left;
-    border: 3px 1px 1px 2px solid whitesmoke;
     padding-top: 2px;
-    width: 230pt;
+    width: 246px;
 }
 
 .menu li a {
     color: whitesmoke;
+    border-radius: 10px;
     font-weight: bolder;
     text-decoration: none;
     padding: 5px 10px;
     display: block;
-    transition: 0.2s linear;
+    transition: 0.4s linear;
 }
 
 .menu li a:hover {
@@ -398,7 +399,7 @@ a[class="pages-links"]:hover {
 
 .menu li ul {
     position: absolute;
-    bottom: 25px;
+    bottom: 86px;
     left: 0;
     display: none;
     width: 100%;
@@ -407,10 +408,14 @@ a[class="pages-links"]:hover {
 .menu li:hover ul, .menu li.over ul {
     display: block;
     background-image: linear-gradient(green, #05dd3b);
+    height: 0;
+    border-radius: 10px;
 }
 
 .menu li ul li {
+    background-image: linear-gradient(green, #05dd3b);
     border: 1px solid whitesmoke;
+    border-radius: 10px;
     display: block;
     width: 100%;
 }
