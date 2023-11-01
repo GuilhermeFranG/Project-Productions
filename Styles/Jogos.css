@@ -16,6 +16,8 @@ footer {
     border-top: 2px solid rgba(0, 0, 0, 0.829);
 }
 
+::selection {color: red; background-color: rgb(102, 7, 26); text-shadow: 0px 0px 15px whitesmoke;}
+
 a:link, a:visited {text-decoration: none; color: whitesmoke;}
 
 
@@ -334,9 +336,12 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
     float: left;
     padding-top: 2px;
     width: 268px;
+    background-image: linear-gradient(red,crimson,darkred,rgb(102, 7, 26));
+    border-radius: 10px;
 }
 
 .menu li a {
+    cursor: pointer;
     color: whitesmoke;
     border-radius: 10px;
     font-weight: bolder;
@@ -364,13 +369,12 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 
 .menu li:hover ul, .menu li.over ul {
     display: block;
-    background-image: linear-gradient(red, rgb(102, 7, 26));
     height: 0;
     border-radius: 10px;
 }
 
 .menu li ul li {
-    background-image: linear-gradient(red, rgb(102, 7, 26));
+    background-image: linear-gradient(red,crimson,darkred,rgb(102, 7, 26));
     border: 1px solid whitesmoke;
     border-radius: 10px;
     display: block;
