@@ -1,7 +1,4 @@
-* {
-    margin:  0;
-    padding: 0;
-}
+* {margin:  0; padding: 0; box-sizing: border-box;}
 
 
 
@@ -21,10 +18,11 @@ footer {
     width: 100%;
     text-align: center;
     font-size: x-small;
-    background-image: linear-gradient(#033746,purple,magenta,#fb7a51,magenta,purple,#033746);
+    box-shadow: 0;
+    -moz-box-shadow: 0 3px 4px 0 magenta;
+    -webkit-box-shadow: 0 3px 4px 0 magenta;
+    text-shadow: 1px 1px 16px #033746;
     border-top: 2px solid rgba(0, 0, 0, 0.829);
-    color: #fb7a51;
-    text-shadow: 1px 0px 2px #ffd26c;
 }
 
 a:link, a:visited {text-decoration: none;}
@@ -56,18 +54,18 @@ header a img {
 
 header a h1 {
     margin-top: 10%;
-    margin-left: 4%;
-    color: #0067c6;
-    text-shadow: 1px 2px whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 8%;
+    color: pink;
     font-size: 35px;
+    text-shadow: 1px 1px 6px magenta;
 }
 
 header a h5 {
-    margin-top: 100%;
-    color: #01aa2c;
-    text-shadow: 1px 2px whitesmoke;
-    transform: translateX(-115pt);
+    margin-top: 70pt;
+    color: #0088ff;
+    font-size: large;
+    transform: translateX(-120pt);
+    text-shadow: 1px 1px 6px magenta;
 }
 
 .head-btn {
@@ -76,14 +74,13 @@ header a h5 {
     margin-top: 5%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0;
-    -moz-box-shadow: 0 3px 10px 0 #3b8ed6;
-    -webkit-box-shadow: 0 3px 10px 0 #3b8ed6;
+    -moz-box-shadow: 0 3px 10px 0 magenta;
+    -webkit-box-shadow: 0 3px 10px 0 magenta;
     color: #0169C7;
     font-size: 93%;
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
     border: none;
 }
-
 .head-btn:hover {
     cursor: pointer;
     background-color: #157fdb;
@@ -95,7 +92,7 @@ header a h5 {
 button[name="service"] {
     width: 9%;
     border-radius: 10px;
-    margin-left: 41%;
+    margin-left: 40%;
     height: 55px;
 }
 
@@ -111,7 +108,6 @@ button[name="opitions"] {
 header h2 {
     transform: translateY(-11px);
 }
-
 
 
 
@@ -145,16 +141,15 @@ main {
     padding-left: 10%;
 }
 
-#home,
-#channels {
+#home, #channels {
     height: 22px;
     text-shadow: 2px 2px whitesmoke;
     text-shadow: 1px 0px 2px grey;
-    color: #05dd3b;
-    padding-bottom: 10px;
-    padding-top: 30px;
+    color: magenta;
+    padding-top: 20pt;
+    padding-bottom: 25pt;
     border-bottom: 1px solid grey;
-    font-size: small;
+    font-size: smaller;
 }
 
 
@@ -175,7 +170,7 @@ aside {
     padding-bottom: 3%;
     border-bottom: 1px solid grey;
     border-radius: 10px;
-    background-image: linear-gradient(white, palegreen, lime);
+    background-image: linear-gradient(white, pink, magenta);
 }
 
 .ltnw-links {
@@ -195,19 +190,19 @@ aside a h6 {
     transition: 0.4s;
     color: black;
     transform: translateX(-9%);
+    text-shadow: 1px 1px 12px magenta;
 }
-
 aside a h6:hover {
     color: #0169C7;
     box-shadow: 0;
-    text-shadow: 0px 1px 5px #5fb4ff;
 }
 
 aside a h5 {
     margin-top: 9%;
     margin-left: 3%;
     width: 5%;
-    color: green;
+    color: #033746;
+    text-shadow: 1px 1px 12px magenta;
 }
 
 aside button {
@@ -218,14 +213,13 @@ aside button {
     width: 70%;
     padding: 2%;
     color: whitesmoke;
-    background-color: #05dd3b;
+    background-color: #fb7a51;
     border-radius: 10px;
     border: none;
     transition: 0.5s;
 }
-
 aside button:hover {
-    background-color: #3ac53a;
+    background-color: #fc9b57;
     color: white;
     text-shadow: 1px 1px 1px black;
     cursor: pointer;
@@ -244,7 +238,7 @@ aside button:hover {
     justify-content: center;
     position: sticky;
     top: 0;
-    padding-top: 5%;
+    padding-top: 4%;
 }
 
 .sites {
@@ -256,20 +250,14 @@ aside button:hover {
     margin-top: 5%;
     transition: 0.5s;
 }
-
-.sites[name="N"] {
-    background-color: lightblue;
-}
-
-.sites[name="S"] {
-    background-color: #05dd05;
-}
+.sites[name="N"] {background-color: lightblue;}
+.sites[name="S"] {background-color: #05dd05;}
 
 .sites:hover {
     cursor: pointer;
     box-shadow: 0;
-    -moz-box-shadow: 1px 5px 10px 0 #05dd3b;
-    -webkit-box-shadow: 1px 5px 10px 0 #05dd3b;
+    -moz-box-shadow: 1px 5px 10px 0 magenta;
+    -webkit-box-shadow: 1px 5px 10px 0 magenta;
 }
 
 .img-sts {
@@ -282,7 +270,7 @@ aside button:hover {
     margin-top: 20%;
     text-shadow: 2px 2px whitesmoke;
     text-shadow: 1px 0px 2px grey;
-    color: #05dd3b;
+    color: magenta;
     border-bottom: 1px solid grey;
     font-size: smaller;
 }
@@ -306,7 +294,7 @@ aside button:hover {
     background-image: linear-gradient(white, whitesmoke, lightgrey, grey);
     height: 500px;
     border-top: 1px solid;
-    padding-top: 2%;
+    padding-top: 30px;
 }
 
 #category h3 {
@@ -314,7 +302,7 @@ aside button:hover {
     height: 20px;
     text-shadow: 2px 2px lightblue;
     border-bottom: grey 1px solid;
-    padding-bottom: 2%;
+    padding-bottom: 35px;
     width: 93%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -361,8 +349,8 @@ a[class="pages-links"]:hover {
 
 #credits {
     height: 30px;
-    background-image: linear-gradient(green, darkgreen, #189c39, #05dd05);
-    width: 929pt;
+    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
+    width: 100%;
     font-size: small;
     border-radius: 10px;
     border: 1px solid whitesmoke;
@@ -376,10 +364,11 @@ a[class="pages-links"]:hover {
     position: relative;
     float: left;
     padding-top: 2px;
-    width: 246px;
+    width: 244px;
 }
 
 .menu li a {
+    cursor: pointer;
     color: whitesmoke;
     border-radius: 10px;
     font-weight: bolder;
@@ -392,9 +381,9 @@ a[class="pages-links"]:hover {
 .menu li a:hover {
     color: white;
     box-shadow: 0;
-    -moz-box-shadow: 0 3px 10px 0 #05dd3b;
-    -webkit-box-shadow: 0 3px 10px 0 #05dd3b;
-    text-shadow: 0px 0px 5px #05dd3b;
+    -moz-box-shadow: 0 3px 12px 0 #ffd26c;
+    -webkit-box-shadow: 0 3px 12px 0 #ffd26c;
+    text-shadow: 0px 0px 5px #ffd26c;
 }
 
 .menu li ul {
@@ -407,13 +396,13 @@ a[class="pages-links"]:hover {
 
 .menu li:hover ul, .menu li.over ul {
     display: block;
-    background-image: linear-gradient(green, #05dd3b);
+    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
     height: 0;
     border-radius: 10px;
 }
 
 .menu li ul li {
-    background-image: linear-gradient(green, #05dd3b);
+    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
     border: 1px solid whitesmoke;
     border-radius: 10px;
     display: block;
