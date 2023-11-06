@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+* { margin: 0; padding: 0; }
 
 
 
@@ -19,6 +16,8 @@ footer {
     border-top: 2px solid rgba(0, 0, 0, 0.829);
     text-shadow: 1px 0px #0169C7;
 }
+
+::selection {color: #000080; background-color: #0169C7; text-shadow: 0px 0px 18px whitesmoke;}
 
 a:link, a:visited {text-decoration: none;}
 
@@ -324,9 +323,12 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
     float: left;
     padding-top: 2px;
     width: 268px;
+    background-image: linear-gradient(blue,darkblue,#034680,#0169C7);
+    border-radius: 10px;
 }
 
 .menu li a {
+    cursor: pointer;
     color: whitesmoke;
     border-radius: 10px;
     font-weight: bolder;
@@ -353,14 +355,13 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 }
 
 .menu li:hover ul, .menu li.over ul { 
-    display: block; 
-    background-image: linear-gradient(blue,#0169C7); 
+    display: block;  
     height: 0;
     border-radius: 10px;
 }
 
-.menu li ul li {
-    background-image: linear-gradient(blue,#0169C7);
+.menu li ul li { 
+    background-image: linear-gradient(blue,darkblue,#034680,#0169C7);
     border: 1px solid whitesmoke;
     border-radius: 10px;
     display: block;
