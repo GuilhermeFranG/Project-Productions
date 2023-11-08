@@ -35,7 +35,6 @@ header {
 }
 
 header a {display: flex;}
-
 header a img {
     margin-left: 3%;
     margin-top: 3%;
@@ -51,7 +50,6 @@ header a h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
 }
-
 header a h4 {
     margin-top: 85pt;
     color: #0067c6;
