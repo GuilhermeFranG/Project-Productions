@@ -1,0 +1,50 @@
+# Criado por https://www.toptal.com/developers/gitignore/api/vuejs,visualstudiocode,windows
+# Edite em https://www.toptal.com/developers/gitignore?templates=vuejs,visualstudiocode,windows
+
+inutil.*
+# Histórico local para código do Visual Studio
+.história/
+
+# Extensões de código do Visual Studio criadas
+*.vsix
+
+### Correção do VisualStudioCode ###
+# Ignora todo o histórico local de arquivos
+.história
+.ionide
+
+### Vuejs ###
+# Modelo recomendado: Node.gitignore
+
+node_modules/
+dist/
+npm-debug.log
+fio-error.log
+
+### Janelas ###
+# Arquivos de cache de miniaturas do Windows
+Thumbs.db
+Thumbs.db:criptografável
+ehthumbs.db
+ehthumbs_vista.db
+
+# Despejar arquivo
+*.stackdump
+
+# Arquivo de configuração da pasta
+[Dd]esktop.ini
+
+# Lixeira usada em compartilhamentos de arquivos
+$RECYCLE.BIN/
+
+# Arquivos do instalador do Windows
+*.táxi
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Atalhos do Windows
+*.lnk
+
+# Fim de https://www.toptal.com/developers/gitignore/api/vuejs,visualstudiocode,windows
