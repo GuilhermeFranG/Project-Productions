@@ -37,31 +37,25 @@ header {
     font-size: larger;
     background-image: linear-gradient(#033746,magenta,#ffd26c);
     width: 100%;
-    height: 190px;
+    height: 260px;
     display: flex;
 }
 
-header a {
-    display: flex;
-}
-
+header a {display: flex;}
 header a img {
-    margin-left: 3%;
-    margin-top: 3%;
-    height: 165px;
-    width: 200px;
+    height: 255px;
+    width: 280px;
 }
 
 header a h1 {
-    margin-top: 10%;
-    margin-left: 8%;
+    margin-top: 15%;
     color: pink;
     font-size: 35px;
     text-shadow: 1px 1px 6px magenta;
 }
 
 header a h5 {
-    margin-top: 70pt;
+    margin-top: 90pt;
     color: #0088ff;
     font-size: large;
     transform: translateX(-145pt);
@@ -71,7 +65,7 @@ header a h5 {
 .head-btn {
     transition: 0.3s linear;
     height: 35%;
-    margin-top: 5%;
+    margin-top: 70pt;
     background-color: rgb(255, 255, 255);
     box-shadow: 0;
     -moz-box-shadow: 0 3px 10px 0 magenta;
@@ -92,7 +86,7 @@ header a h5 {
 button[name="service"] {
     width: 9%;
     border-radius: 10px;
-    margin-left: 40%;
+    margin-left: 33%;
     height: 55px;
 }
 
