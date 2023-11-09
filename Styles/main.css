@@ -409,9 +409,9 @@ aside h2 {
 }
 .last-news[name="C"] {background-image: linear-gradient(white,lightblue,navy);}
 .last-news[name="T"] {background-image: linear-gradient(white,lightcyan,lightseagreen);}
-.last-news[name="J"] {background-image: linear-gradient(white,tomato,darkred);}
+.last-news[name="J"] {background-image: linear-gradient(white,#fc2f4b,darkred);}
 .last-news[name="F"] {background-image: linear-gradient(white,palegreen,lime);}
-.last-news[name="E"] {background-image: linear-gradient(white,lightpink,rgb(255, 84, 255));}
+.last-news[name="E"] {background-image: linear-gradient(white, pink, magenta);}
 .last-news[name="H"] {background-image: linear-gradient(white,coral,orange);}
 .last-news[name="W"] {background-image: linear-gradient(white,lightgreen,seagreen);}
 
@@ -435,7 +435,7 @@ aside a h6:hover {
 aside a h5 { margin-top: 12%; margin-left: 3%; width: 5%; }
 aside a h5[name="C"] {color: #000080;}
 aside a h5[name="T"] {color: darkcyan;}
-aside a h5[name="J"] {color: crimson;}
+aside a h5[name="J"] {color: rgb(168, 0, 34);}
 aside a h5[name="F"] {color: green;}
 aside a h5[name="E"] {color: deeppink;}
 aside a h5[name="H"] {color: orangered;}
