@@ -67,9 +67,14 @@ header a h1 {
     text-shadow: none;
     border: 2px #0169C7 solid;
 }
+.head-btn:active {
+    background-color: #000080;
+    color: lightblue;
+    border: none;
+}
 
-button[name="service"] { width: 9%; border-radius: 10px; margin-left: 50%; height: 55px; }
-button[name="opitions"] { 
+button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 50%; height: 55px; }
+button[name="opções"] { 
     width: 3%;
     height: 50px; 
     border-radius: 40%; 
@@ -337,9 +342,17 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
     display: block;
     transition: 0.4s linear;
 }
-
 .menu li a:hover {
     color: white;
+    box-shadow: 0;
+    -moz-box-shadow: 0 3px 15px 0 #3b8ed6;
+    -webkit-box-shadow: 0 3px 15px 0 #3b8ed6;
+    text-shadow: 0px 0px 5px #3b8ed6;
+}
+.menu li a:active {
+    background-color: #000080;
+    color: lightblue;
+    border: none;
     box-shadow: 0;
     -moz-box-shadow: 0 3px 15px 0 #3b8ed6;
     -webkit-box-shadow: 0 3px 15px 0 #3b8ed6;
