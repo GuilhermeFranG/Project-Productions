@@ -351,8 +351,8 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
 .menu li a:hover {
   color: white;
   box-shadow: 0;
-  -moz-box-shadow: 0 3px 10px 0 #3b8ed6;
-  -webkit-box-shadow: 0 3px 10px 0 #3b8ed6;
+  -moz-box-shadow: 0 3px 15px 0 #3b8ed6;
+  -webkit-box-shadow: 0 3px 15px 0 #3b8ed6;
   text-shadow: 0px 0px 5px #3b8ed6;
 }
 
@@ -364,7 +364,7 @@ a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shado
   width: 100%;
 }
 
-.menu li:hover ul, .menu li.over ul { 
+.menu li:hover ul { 
   display: block;  
   height: 0;
   border-radius: 10px;

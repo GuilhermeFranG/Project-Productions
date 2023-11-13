@@ -388,7 +388,7 @@ a[class="pages-links"]:hover {
     width: 100%;
 }
 
-.menu li:hover ul, .menu li.over ul {
+.menu li:hover ul {
     display: block;
     background-image: linear-gradient(#033746,#015d72,#2f7d8f);
     height: 0;
