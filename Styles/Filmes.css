@@ -2,20 +2,9 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
-
-img { border-radius: 13px; }
-
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: x-small;
-  background-image: linear-gradient(#0dbd39,rgb(0, 179, 0),#0dbd39);
-  border-top: 2px solid rgba(0, 0, 0, 0.829);
-  text-shadow: 1px 0px #0169C7;
-}
 
 ::selection {color: lightgreen; background-color: #0dbd39; text-shadow: 0px 0px 18px whitesmoke;}
 
@@ -41,16 +30,18 @@ header a img { margin-left: 3%; margin-top: 3%; height: 165px; width: 200px; }
 header a h1 {
   margin-top: 15%;
   color: #01aa2c;
-  text-shadow: 1px 2px whitesmoke;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 35px;
+  text-shadow: 3px 2px 10px rgb(173, 255, 173);
+  font-family: 'Roboto Slab', serif;
+  font-size: 42px;
 }
 
 header a h5 {
   margin-top: 80pt;
   color: #0067c6;
-  text-shadow: 1px 2px whitesmoke;
-  transform: translateX(-148pt);
+  text-shadow: 3px 2px 10px rgb(173, 255, 173);
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  transform: translateX(-140pt);
 }
 
 .head-btn { 
@@ -150,7 +141,7 @@ aside {
 
 .ltnw-links { display: flex; }
 
-aside a img { height: 150px; width: 210px ; margin-left: 3%; margin-top: 4%;}
+aside a img { height: 150px; width: 210px ; margin-left: 3%; margin-top: 4%; border-radius: 8px;}
 
 aside a h6 { 
   font-size: smaller;
@@ -203,15 +194,16 @@ aside button:hover {
 }
 
 .sites {
-  width: 23%;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  width: 26%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   text-align: center;
   border-radius: 15px;
-  margin-top: 5%;
+  margin-top: 4%;
   transition: 0.5s; 
 }
-.sites[name="N"] {background-color: lightblue;}
+.sites[name="M"] {background-color: lightblue;}
+.sites[name="V"] {background-color: #9a0000;}
 .sites[name="S"] {background-color: #05dd05;}
 
 .sites:hover {
@@ -221,7 +213,9 @@ aside button:hover {
   -webkit-box-shadow: 1px 5px 10px 0 #05dd3b;
 }
 
-.img-sts { height: 50px; width: 75px;}
+.img-sts { height: 65px; width: 90px;}
+
+.sites h5 {color: black;}
 
 #channelspainel h4 {
   padding-bottom: 8%;
@@ -240,6 +234,80 @@ aside button:hover {
   margin: 10px;
   padding-top: 5px;
   padding-left: 10%;
+}
+
+
+
+
+#menu {
+  height: 30px;
+  background-image: linear-gradient(green, darkgreen, #189c39, #05dd05);
+  width: 100%;
+  font-size: small;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  border-left: none;
+  border-right: none;
+}
+
+.display { list-style: none; float: left; }
+
+.display li {
+  position: relative;
+  float: left;
+  padding-top: 2px;
+  width: 268px;
+  background-image: linear-gradient(green, darkgreen, #189c39, #05dd05);
+  border-radius: 10px;
+}
+
+.display li a {
+  cursor: pointer;
+  color: whitesmoke;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+  transition: 0.4s linear;
+}
+.display li a:hover {
+  color: white;
+  box-shadow: 0;
+  -moz-box-shadow: 0 3px 20px 0 #05dd3b;
+  -webkit-box-shadow: 0 3px 20px 0 #05dd3b;
+  text-shadow: 0px 0px 5px #05dd3b;
+}
+.display li a:active {
+  background-color: darkgreen;
+  color: #05dd05;
+  border: none;
+  box-shadow: 0;
+  -moz-box-shadow: 0 3px 20px 0 #05dd3b;
+  -webkit-box-shadow: 0 3px 20px 0 #05dd3b;
+  text-shadow: 0px 0px 5px #05dd3b;
+}
+
+.display li ul {
+  position: absolute;
+  bottom: 86px;
+  left: 0;
+  display: none;
+  width: 100%;
+}
+
+.display li:hover ul {
+  display: block;
+  height: 0;
+  border-radius: 10px;
+}
+
+.display li ul li {
+  background-image: linear-gradient(green, darkgreen, #189c39, #05dd05);
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
 }
 
 
@@ -275,7 +343,7 @@ aside button:hover {
 
 #list li { margin-bottom: 40px; }
 
-a[class="pages-links"]:link, a[class="pages-links"]:visited {
+.pages-links:link, .pages-links:visited {
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.3s linear;
@@ -283,82 +351,21 @@ a[class="pages-links"]:link, a[class="pages-links"]:visited {
   border-left: 4px solid blue;
   margin-left: 45px;
   padding-left: 6%;
-
 }
 
-a[class="pages-links"]:link:active, a[class="pages-links"]:visited:active {color: #0169C7;}
-a[class="pages-links"]:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shadow: 0px 0px 1px rgb(28, 28, 252);}
+.pages-links:link:active, .pages-links:visited:active {color: #0169C7;}
+.pages-links:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shadow: 0px 0px 1px rgb(28, 28, 252);}
 
 
 
 
-#credits {
-  height: 30px;
-  background-image: linear-gradient(green, darkgreen, #189c39, #05dd05);
-  width: 100%;
-  font-size: small;
-  border-radius: 10px;
-  border: 1px solid whitesmoke;
-  border-left: none;
-  border-right: none;
-}
-
-.menu { list-style: none; float: left; }
-
-.menu li {
+footer {
   position: relative;
-  float: left;
-  padding-top: 2px;
-  width: 268px;
-  background-image: linear-gradient(green, darkgreen, #189c39, #05dd05);
-  border-radius: 10px;
-}
-
-.menu li a {
-  cursor: pointer;
-  color: whitesmoke;
-  border-radius: 10px;
-  font-weight: bolder;
-  text-decoration: none;
-  padding: 5px 10px;
-  display: block;
-  transition: 0.4s linear;
-}
-.menu li a:hover {
-  color: white;
-  box-shadow: 0;
-  -moz-box-shadow: 0 3px 20px 0 #05dd3b;
-  -webkit-box-shadow: 0 3px 20px 0 #05dd3b;
-  text-shadow: 0px 0px 5px #05dd3b;
-}
-.menu li a:active {
-  background-color: darkgreen;
-  color: #05dd05;
-  border: none;
-  box-shadow: 0;
-  -moz-box-shadow: 0 3px 20px 0 #05dd3b;
-  -webkit-box-shadow: 0 3px 20px 0 #05dd3b;
-  text-shadow: 0px 0px 5px #05dd3b;
-}
-
-.menu li ul {
-  position: absolute;
-  bottom: 86px;
-  left: 0;
-  display: none;
+  bottom: 0;
   width: 100%;
-}
-
-.menu li:hover ul {
-  display: block;
-  height: 0;
-  border-radius: 10px;
-}
-
-.menu li ul li {
-  background-image: linear-gradient(green, darkgreen, #189c39, #05dd05);
-  border: 1px solid whitesmoke;
-  border-radius: 10px;
-  display: block;
-  width: 100%;
+  text-align: center;
+  font-size: x-small;
+  background-image: linear-gradient(#0dbd39,rgb(0, 179, 0),#0dbd39);
+  border-top: 2px solid rgba(0, 0, 0, 0.829);
+  text-shadow: 1px 0px #0169C7;
 }
