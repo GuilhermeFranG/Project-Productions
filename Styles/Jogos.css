@@ -46,8 +46,9 @@ header a h1 {
 header a h4 {
     margin-top: 85pt;
     color: #0067c6;
-    text-shadow: 0px 1px 2px black;
-    transform: translateX(-150pt);
+    text-shadow: 0px 1px 20px white;
+    transform: translateX(-155pt);
+    font-size: 16px;
 }
 
 .head-btn {
@@ -238,7 +239,7 @@ aside button:hover {
     -webkit-box-shadow: 1px 5px 10px 0 crimson;
 }
 
-.img-sts { height: 65px; width: 90px;}
+.img-sts {height: 65px; width: 90px;}
 
 .sites h5 {color: black;}
 
