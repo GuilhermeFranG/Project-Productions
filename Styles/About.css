@@ -32,20 +32,20 @@ a {text-decoration: none;}
 #header {
     grid-area: header;
     display: flex;
-    height: 130pt;
+    height: 150pt;
 }
 
 #header a img {
-    height: 150px;
+    height: 170px;
     width: 200px;
-    margin-left: 1%;
+    margin-left: 3%;
     margin-top: 5%;
 }
 
 #header h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 45px;
-    margin-top: 50pt;
+    margin-top: 52pt;
     margin-left: 25pt;
     color: #0169C7;
     text-shadow: 3px 2px 10px white;
@@ -53,17 +53,18 @@ a {text-decoration: none;}
 
 .head-btn {
     transition: 0.3s linear;
-    margin-top: 4%;
+    
     background-color: rgb(255, 255, 255);
     box-shadow: 0;
     -moz-box-shadow: 0 3px 10px 0 #3b8ed6;
     -webkit-box-shadow: 0 3px 10px 0 #3b8ed6;
     color: #0169C7;
     border: none;
+    height: 55px;
     width: 9%;
     border-radius: 10px;
+    margin-top: 5%;
     margin-left: 52%;
-    height: 55px;
     font-size: 12pt;
 }
 .head-btn:hover {
