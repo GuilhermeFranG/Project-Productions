@@ -2,27 +2,13 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: 
     linear-gradient(#033746,#015d72,purple,magenta,#fb7a51,#fc9b57,#ffd26c);
     margin: 60px;
-}
-
-img {
-    border-radius: 13px;
-}
-
-footer {
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-size: x-small;
-    box-shadow: 0;
-    -moz-box-shadow: 0 3px 4px 0 magenta;
-    -webkit-box-shadow: 0 3px 4px 0 magenta;
-    text-shadow: 1px 1px 16px #033746;
-    border-top: 2px solid rgba(0, 0, 0, 0.829);
 }
 
 a:link, a:visited {text-decoration: none;}
@@ -52,14 +38,16 @@ header a h1 {
     color: pink;
     font-size: 35px;
     text-shadow: 1px 1px 6px magenta;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 header a h5 {
     margin-top: 90pt;
     color: #0088ff;
-    font-size: large;
-    transform: translateX(-145pt);
+    font-size: 18px;
+    transform: translateX(-130pt);
     text-shadow: 1px 1px 6px magenta;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .head-btn {
@@ -88,7 +76,7 @@ header a h5 {
     border: none;
 }
 
-button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 33%; height: 55px; }
+button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 35%; height: 55px; }
 button[name="opções"] { 
     width: 3%;
     height: 50px; 
@@ -163,15 +151,14 @@ aside {
     background-image: linear-gradient(white, pink, magenta);
 }
 
-.ltnw-links {
-    display: flex;
-}
+.ltnw-links {display: flex;}
 
 aside a img {
     height: 150px;
     width: 210px;
     margin-left: 3%;
     margin-top: 4%;
+    border-radius: 8px;
 }
 
 aside a h6 {
@@ -232,15 +219,16 @@ aside button:hover {
 }
 
 .sites {
-    width: 23%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    width: 26%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     text-align: center;
     border-radius: 15px;
-    margin-top: 5%;
-    transition: 0.5s;
+    margin-top: 4%;
+    transition: 0.5s; 
 }
-.sites[name="N"] {background-color: lightblue;}
+.sites[name="M"] {background-color: lightblue;}
+.sites[name="V"] {background-color: #9a0000;}
 .sites[name="S"] {background-color: #05dd05;}
 
 .sites:hover {
@@ -250,10 +238,9 @@ aside button:hover {
     -webkit-box-shadow: 1px 5px 10px 0 magenta;
 }
 
-.img-sts {
-    height: 50px;
-    width: 75px;
-}
+.img-sts {height: 70px; width: 95px;}
+
+.sites h5 {color: black;}
 
 #channelspainel h4 {
     padding-bottom: 8%;
@@ -274,6 +261,79 @@ aside button:hover {
     margin: 10px;
     padding-top: 5px;
     padding-left: 10%;
+}
+
+
+
+
+#menu {
+    height: 30px;
+    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
+    width: 100%;
+    font-size: small;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    border-left: none;
+    border-right: none;
+}
+
+.display { list-style: none; float: left; }
+
+.display li {
+    position: relative;
+    float: left;
+    padding-top: 2px;
+    width: 244px;
+}
+
+.display li a {
+    cursor: pointer;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    transition: 0.4s linear;
+}
+.display li a:hover {
+    color: white;
+    box-shadow: 0;
+    -moz-box-shadow: 0 3px 12px 0 #ffd26c;
+    -webkit-box-shadow: 0 3px 12px 0 #ffd26c;
+    text-shadow: 0px 0px 5px #ffd26c;
+}
+.display li a:active {
+    background-color: #033746;
+    color: rgb(255, 162, 56);
+    border: none;
+    box-shadow: 0;
+    -moz-box-shadow: 0 3px 12px 0 #ffd26c;
+    -webkit-box-shadow: 0 3px 12px 0 #ffd26c;
+    text-shadow: 0px 0px 5px #ffd26c;
+}
+
+.display li ul {
+    position: absolute;
+    bottom: 86px;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+
+.display li:hover ul {
+    display: block;
+    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
+    height: 0;
+    border-radius: 10px;
+}
+
+.display li ul li {
+    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
 }
 
 
@@ -311,8 +371,7 @@ aside button:hover {
     margin-bottom: 40px;
 }
 
-a[class="pages-links"]:link,
-a[class="pages-links"]:visited {
+.pages-links:link, .pages-links:visited {
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: 0.3s linear;
@@ -320,89 +379,22 @@ a[class="pages-links"]:visited {
     border-left: 4px solid blue;
     margin-left: 45px;
     padding-left: 6%;
-
 }
 
-a[class="pages-links"]:link:active,
-a[class="pages-links"]:visited:active {
-    color: #0169C7;
-}
-
-a[class="pages-links"]:hover {
-    color: rgb(28, 28, 252);
-    box-shadow: 0;
-    text-shadow: 0px 0px 1px rgb(28, 28, 252);
-}
+.pages-links:link:active, .pages-links:visited:active {color: #0169C7;}
+.pages-links:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shadow: 0px 0px 1px rgb(28, 28, 252);}
 
 
 
 
-#credits {
-    height: 30px;
-    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
+footer {
+    bottom: 0;
     width: 100%;
-    font-size: small;
-    border-radius: 10px;
-    border: 1px solid whitesmoke;
-    border-left: none;
-    border-right: none;
-}
-
-.menu { list-style: none; float: left; }
-
-.menu li {
-    position: relative;
-    float: left;
-    padding-top: 2px;
-    width: 244px;
-}
-
-.menu li a {
-    cursor: pointer;
-    color: whitesmoke;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
-    transition: 0.4s linear;
-}
-.menu li a:hover {
-    color: white;
+    text-align: center;
+    font-size: x-small;
     box-shadow: 0;
-    -moz-box-shadow: 0 3px 12px 0 #ffd26c;
-    -webkit-box-shadow: 0 3px 12px 0 #ffd26c;
-    text-shadow: 0px 0px 5px #ffd26c;
-}
-.menu li a:active {
-    background-color: #033746;
-    color: rgb(255, 162, 56);
-    border: none;
-    box-shadow: 0;
-    -moz-box-shadow: 0 3px 12px 0 #ffd26c;
-    -webkit-box-shadow: 0 3px 12px 0 #ffd26c;
-    text-shadow: 0px 0px 5px #ffd26c;
-}
-
-.menu li ul {
-    position: absolute;
-    bottom: 86px;
-    left: 0;
-    display: none;
-    width: 100%;
-}
-
-.menu li:hover ul {
-    display: block;
-    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
-    height: 0;
-    border-radius: 10px;
-}
-
-.menu li ul li {
-    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
-    border: 1px solid whitesmoke;
-    border-radius: 10px;
-    display: block;
-    width: 100%;
+    -moz-box-shadow: 0 3px 4px 0 magenta;
+    -webkit-box-shadow: 0 3px 4px 0 magenta;
+    text-shadow: 1px 1px 16px #033746;
+    border-top: 2px solid rgba(0, 0, 0, 0.829);
 }
