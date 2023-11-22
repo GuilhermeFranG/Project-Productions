@@ -2,7 +2,7 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
@@ -31,7 +31,7 @@ header a h1 {
   margin-left: 6%;
   color: #0067c6;
   text-shadow: 3px 2px 10px rgb(190, 290, 235);
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 45px;
   margin-top: 55pt;
 }
@@ -62,7 +62,7 @@ header a h1 {
   border: none;
 }
 
-button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 50%; height: 55px; }
+button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 48%; height: 55px; }
 button[name="opções"] { 
   width: 3%;
   height: 50px; 
@@ -172,7 +172,7 @@ main {
   -webkit-box-shadow: 1px 5px 10px 0 #0169C7;
 }
 
-.img-sts { height: 70px; width: 95px;}
+.img-sts {height: 70px; width: 95px;}
 
 .sites h5 {color: black; }
 
@@ -360,7 +360,7 @@ aside h2 {
 }
 
 .last-news {
-  width: 50%;
+  width: 52%;
   margin: 2%;
   margin-top: 2%;
   padding-bottom: 3%;
@@ -380,7 +380,7 @@ aside h2 {
 aside a img { height: 170px; width: 240px ; margin-left: 3%; margin-top: 5%; border-radius: 8px; }
 
 aside a h6 { 
-  font-size: medium;
+  font-size: 14px;
   margin-top: 15%;
   transition: 0.4s;
   color: black;
