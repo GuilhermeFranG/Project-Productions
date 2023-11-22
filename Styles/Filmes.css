@@ -2,7 +2,7 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
@@ -28,20 +28,20 @@ header a {display: flex;}
 header a img { margin-left: 3%; margin-top: 3%; height: 165px; width: 200px; }
 
 header a h1 {
-  margin-top: 15%;
+  margin-top: 50px;
   color: #01aa2c;
   text-shadow: 3px 2px 10px rgb(173, 255, 173);
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 42px;
 }
 
 header a h5 {
-  margin-top: 80pt;
+  margin-top: 75pt;
   color: #0067c6;
   text-shadow: 3px 2px 10px rgb(173, 255, 173);
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
-  transform: translateX(-140pt);
+  transform: translateX(-158pt);
 }
 
 .head-btn { 
@@ -70,7 +70,7 @@ header a h5 {
   border: none;
 }
 
-button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 45%; height: 55px; }
+button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 42%; height: 55px; }
 button[name="opções"] { 
   width: 3%;
   height: 50px; 
@@ -213,7 +213,7 @@ aside button:hover {
   -webkit-box-shadow: 1px 5px 10px 0 #05dd3b;
 }
 
-.img-sts { height: 65px; width: 90px;}
+.img-sts {height: 65px; width: 90px;}
 
 .sites h5 {color: black;}
 
