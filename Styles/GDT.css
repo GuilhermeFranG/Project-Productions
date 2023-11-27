@@ -4,6 +4,7 @@
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
+a {text-decoration: none;}
 
 
 
@@ -20,7 +21,7 @@ header img {
     margin: 15px;
 }
 
-#search {
+#pesquisa {
     padding: 15px;
     height: 40px;
     width: 40%;
@@ -30,13 +31,13 @@ header img {
     border: none;
     outline: none;
 }
-#search:hover {
+#pesquisa:hover {
     box-shadow: 0;
     -moz-box-shadow: 1px 1px 5px #0169C7;
     -webkit-box-shadow: 1px 1px 5px #0169C7;
 }
 
-#loupe {
+#lupa {
     border: 3px solid whitesmoke;
     border-radius: 999%;
     height: 45px;
@@ -45,14 +46,12 @@ header img {
     margin-left: 35%;
     transition: 0.3s;
 }
-#loupe:hover {
+#lupa:hover {
     background-color: aliceblue;
     border: 1px solid rgb(214, 207, 207);
     cursor: pointer;
 }
-#loupe:active {
-    background-color: lightgray;
-}
+#lupa:active {background-color: lightgray;}
 
 
 
