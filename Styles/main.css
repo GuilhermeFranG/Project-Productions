@@ -200,8 +200,8 @@ center {
   font-size: medium;
   opacity: 0.7;
   color: #000080;
-  width: 50%;
-  margin-left: 25%;
+  width: 70%;
+  margin-left: 200px;
   margin-bottom: 4%;
   margin-top: 4%;
   transition: 0.4s linear;
@@ -211,7 +211,7 @@ center {
 }
 
 center:hover {
-  transform: scale(1.4, 1.4);
+  transform: scale(1.2, 1.2);
   opacity: 1;
   border: 3px solid;
   border-style: outset;
@@ -261,8 +261,13 @@ center:hover {
   }
 }
 
-b {font-size: 40px; text-shadow: none; padding-right: 24%;}
-small {font-size: 40px; text-shadow: none; padding-left: 24%}
+center span {
+  font-size: 40px; 
+  text-shadow: none; 
+  justify-content: space-between;
+  padding-left: 166px;
+  padding-right: 166px;
+}
 
 
 
