@@ -1,1 +1,57 @@
 * {margin: 0%; padding: 0%; box-sizing: border-box;}
+
+
+
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+a {text-decoration: none;}
+
+
+
+header {
+    height: 140px;
+    display: flex;
+    background-image: linear-gradient(rgb(142, 211, 235),lightblue,white);
+    border-bottom: 2px solid;
+}
+
+header img {
+    height: 105px; 
+    width: 140px;
+    margin: 15px;
+}
+
+#pesquisa {
+    padding: 15px;
+    height: 40px;
+    width: 40%;
+    margin: 4%;
+    margin-left: 25px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+#pesquisa:hover {
+    box-shadow: 0;
+    -moz-box-shadow: 1px 1px 5px #0169C7;
+    -webkit-box-shadow: 1px 1px 5px #0169C7;
+}
+
+#lupa {
+    border: 3px solid whitesmoke;
+    border-radius: 999%;
+    height: 45px;
+    width: 50px;
+    margin-top: 50px;
+    margin-left: 35%;
+    transition: 0.3s;
+}
+#lupa:hover {
+    background-color: aliceblue;
+    border: 1px solid rgb(214, 207, 207);
+    cursor: pointer;
+}
+#lupa:active {background-color: lightgray;}
+
+
+
