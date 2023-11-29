@@ -1,24 +1,37 @@
-* {margin: 0%; padding: 0%; box-sizing: border-box;}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
 
 
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-a {text-decoration: none;}
+a {text-decoration: none; cursor: pointer;}
 
 
 
 header {
     height: 140px;
     display: flex;
-    background-image: linear-gradient(rgb(142, 211, 235),lightblue,white);
+    background-image: linear-gradient(rgb(142, 211, 235), lightblue, white);
     border-bottom: 2px solid;
 }
 
-header img {
-    height: 105px; 
+header a {display: flex;}
+header a img {
+    height: 105px;
     width: 140px;
     margin: 15px;
+}
+
+header a h3 {
+    width: 400px;
+    color: black;
+    margin: 60px;
+    margin-left: 15px;
+    font-size: 20px;
 }
 
 #pesquisa {
@@ -26,11 +39,12 @@ header img {
     height: 40px;
     width: 40%;
     margin: 4%;
-    margin-left: 25px;
+    margin-left: 22px;
     border-radius: 6px;
     border: none;
     outline: none;
 }
+
 #pesquisa:hover {
     box-shadow: 0;
     -moz-box-shadow: 1px 1px 5px #0169C7;
@@ -41,17 +55,76 @@ header img {
     border: 3px solid whitesmoke;
     border-radius: 999%;
     height: 45px;
-    width: 50px;
-    margin-top: 50px;
-    margin-left: 35%;
+    width: 55px;
+    margin-top: 51px;
+    margin-left: 8%;
     transition: 0.3s;
 }
+
 #lupa:hover {
     background-color: aliceblue;
     border: 1px solid rgb(214, 207, 207);
     cursor: pointer;
 }
-#lupa:active {background-color: lightgray;}
+
+#lupa:active {
+    background-color: lightgray;
+}
 
 
 
+
+#menu {
+    height: 30px;
+    width: 100%;
+    font-size: small;
+    border: 1px lightgray solid;
+}
+
+.display {
+    list-style: none;
+    float: left;
+}
+
+.display li {
+    border: 1px lightgray solid;
+    position: relative;
+    float: left;
+    padding-top: 2px;
+    width: 226px;
+}
+
+.display li a {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    transition: 0.4s;
+}
+.display li a:hover {
+    text-shadow: 1px 1px 5px grey;
+    background-color: whitesmoke;
+}
+.display li a:active {
+    background-color: lightgray;
+    color: white;
+    border: none;
+}
+
+.display li ul {
+    border: 1px lightgray solid;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+
+.display li:hover ul {display: block;}
+
+.display li ul li {
+    border: 1px solid lightgray;
+    display: block;
+    width: 100%;
+}
