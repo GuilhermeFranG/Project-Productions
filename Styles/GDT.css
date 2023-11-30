@@ -13,21 +13,22 @@ a {text-decoration: none; cursor: pointer;}
 
 
 header {
-    height: 150px;
+    height: 145px;
     display: flex; flex-wrap: wrap;
     background-image: linear-gradient(rgb(142, 211, 235), lightblue, white);
+    background-size: cover;
     border-bottom: 2px solid;
 }
 
 header a {display: flex;}
 header a img {
-    height: 115px;
-    width: 150px;
+    height: 110px;
+    width: 145px;
     margin: 15px;
 }
 
 header a h3 {
-    width: 400px;
+    width: 365px;
     color: black;
     margin-top: 65px;
     margin-left: 15px;
@@ -38,31 +39,28 @@ header a h3 {
     border: 3px solid whitesmoke;
     border-radius: 999%;
     height: 45px;
-    width: 55px;
-    margin-top: 53px;
-    margin-left: 15%;
+    width: 50px;
+    margin-top: 50px;
+    margin-left: 10%;
     transition: 0.3s;
 }
-
 #lupa:hover {
     background-color: aliceblue;
     border: 1px solid rgb(214, 207, 207);
     cursor: pointer;
 }
-
 #lupa:active {background-color: lightgray;}
 
 #pesquisa {
     padding: 15px;
     height: 40px;
-    width: 28%;
-    margin: 55px;
-    margin-left: 25px;
+    width: 32%;
+    margin-top: 52px;
+    margin-left: 2vw;
     border-radius: 6px;
     border: none;
     outline: none;
 }
-
 #pesquisa:hover {
     box-shadow: 0;
     -moz-box-shadow: 1px 1px 5px #0169C7;
@@ -76,6 +74,8 @@ header a h3 {
     width: 100%;
     font-size: small;
     border: 1px lightgray solid;
+    padding-left: 3px;
+    margin-top: 5px;
 }
 
 .display {list-style: none; float: left;}
@@ -85,7 +85,7 @@ header a h3 {
     position: relative;
     float: left;
     padding-top: 2px;
-    width: 226px;
+    width: 225px;
 }
 
 .display li a {
