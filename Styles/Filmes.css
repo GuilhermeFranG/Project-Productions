@@ -1,4 +1,8 @@
-* { margin: 0; padding: 0; }
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box
+}
 
 
 
@@ -25,7 +29,7 @@ header {
 }
 
 header a {display: flex;}
-header a img { margin-left: 3%; margin-top: 3%; height: 165px; width: 200px; }
+header a img { margin-left: 1%; margin-top: 1%; height: 165px; width: 200px; }
 
 header a h1 {
   margin-top: 50px;
@@ -86,50 +90,36 @@ header h2 { transform: translateY(-11px); }
 
 main { 
   margin-top: 5%;
-  height: 2250pt; 
+  height: 510vh; 
   background-color: whitesmoke; 
   border-top: 3px solid black; 
   padding-bottom: 10%;
 }
 
-#home { width: 50%; float: left; margin-left: 5%; padding-left: 2%; }
 
-#channels { 
-  float: right; 
-  width: 30%; 
-  margin-right: 4%;
-  position: sticky;
-  top: 0;
-}
-#channels h3 {
-  border-left: 1px solid grey; 
-  margin-top: 1%;
-  padding-left: 10%;
-}
-
-#home, #channels {
-  height: 22px;
-  text-shadow: 2px 2px whitesmoke;
-  text-shadow: 1px 0px 2px grey;
-  color: #05dd3b;
-  padding-bottom: 10px;
-  padding-top: 30px;
-  border-bottom: 1px solid grey;
-  font-size: small;
-}
-
-
-
-
-aside {
+#PRO-news {
   width: 50%;
-  padding-top: 3%;
   padding-bottom: 2%;
+  margin-top: 3%;
   margin-left: 1%;
   float: left;
 }
 
-.last-news {
+#PRO-news h2 { 
+  text-shadow: 2px 2px whitesmoke;
+  text-shadow: 1px 0px 2px grey;
+  color: #05dd3b;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+  font-size: large;
+  width: 65%; 
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 6vh;
+  padding-left: 2%; 
+}
+
+.news {
   width: 100%;
   margin: 2%;
   margin-top: 5%;
@@ -139,26 +129,26 @@ aside {
   background-image: linear-gradient(white,palegreen,lime);
 }
 
-.ltnw-links { display: flex; }
+.news-links { display: flex; }
 
-aside a img { height: 150px; width: 210px ; margin-left: 3%; margin-top: 4%; border-radius: 8px;}
+#PRO-news a img { height: 150px; width: 210px ; margin-left: 3%; margin-top: 4%; border-radius: 8px;}
 
-aside a h6 { 
+#PRO-news a h6 { 
   font-size: smaller;
   margin-top: 15%;
   transition: 0.4s;
   color: black;
   transform: translateX(-9%);
 }
-aside a h6:hover { 
+#PRO-news a h6:hover { 
   color: #0169C7; 
   box-shadow: 0;
   text-shadow: 0px 1px 5px #5fb4ff;
 }
 
-aside a h5 { margin-top: 9%; margin-left: 3%; width: 5%; color: green;}
+#PRO-news a h5 { margin-top: 9%; margin-left: 3%; width: 5%; color: green;}
 
-aside button {
+#PRO-news button {
   font-size: large;
   font-weight: bolder;
   margin-left: 16%;
@@ -171,7 +161,7 @@ aside button {
   border: none;
   transition: 0.5s;
 }
-aside button:hover {
+#PRO-news button:hover {
   background-color: #3ac53a;
   color: white;
   text-shadow: 1px 1px 1px black;
@@ -181,26 +171,47 @@ aside button:hover {
 
 
 
-#channelspainel {
+aside {
   float: right;
-  width: 38%;  
-  display: flex; flex-wrap: wrap;
+  width: 40%;  
+  display: flex; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: sticky;
+  margin-top: 3%;
   top: 0;
-  padding-top: 4%;
+}
+
+
+#channels { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#channels h3 {
+  color: #05dd3b;
+  text-shadow: 2px 2px whitesmoke;
+  text-shadow: 1px 0px 2px grey;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+  font-size: large;
+  width: 28vw;
+  margin-top: 20px;
+  margin-bottom: 2vh;
+  padding-left: 2%; 
+  position: sticky;
+  top: 0;
 }
 
 .sites {
-  width: 26%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  width: 35%;
+  padding: 2% 0 2%;
   text-align: center;
   border-radius: 15px;
-  margin-top: 4%;
   transition: 0.5s; 
+  margin-top: 20px;
 }
 .sites[name="M"] {background-color: lightblue;}
 .sites[name="V"] {background-color: #9a0000;}
@@ -213,27 +224,32 @@ aside button:hover {
   -webkit-box-shadow: 1px 5px 10px 0 #05dd3b;
 }
 
-.img-sts {height: 65px; width: 90px;}
-
 .sites h5 {color: black;}
 
-#channelspainel h4 {
-  padding-bottom: 8%;
-  margin-top: 20%;
+.icon-site {height: 65px; width: 90px;}
+
+
+
+
+#share {width: 40%;}
+
+#share h4 {
+  text-align: center;
+  padding-bottom: 4%;
+  margin-top: 30%;
   text-shadow: 2px 2px whitesmoke;
   text-shadow: 1px 0px 2px grey;
-  color: #05dd3b;
   border-bottom: 1px solid grey;
-  font-size: smaller;
+  color: #05dd3b;
+  font-size: medium;
 }
+
 .button-channels {
   border-radius: 1%;
-  display: flex; flex-wrap: wrap;
   height: 25px; 
   width: 30px;
-  margin: 10px;
-  padding-top: 5px;
-  padding-left: 10%;
+  margin: 15px;
+  margin-left: 20px;
 }
 
 
@@ -326,7 +342,7 @@ aside button:hover {
   height: 20px;
   text-shadow: 2px 2px lightblue;
   border-bottom: grey 1px solid;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
   width: 93%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
