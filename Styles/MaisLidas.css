@@ -1,4 +1,8 @@
-* { margin: 0; padding: 0; }
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box
+}
 
 
 
@@ -25,7 +29,13 @@ header {
 }
 
 header a {display: flex;}
-header a img { margin-left: 3%; margin-top: 5%; height: 165px; width: 200px; }
+
+header a img {
+    margin-left: 3%; 
+    margin-top: 3%; 
+    height: 155px;
+    width: 190px;
+}
 
 header a h1 {
     margin-left: 10%;
@@ -33,13 +43,13 @@ header a h1 {
     text-shadow: 3px 2px 10px rgb(190, 290, 235);
     font-family: 'Bebas Neue', sans-serif;
     font-size: 45px;
-    margin-top: 55pt;
+    margin-top: 10vh;
 }
 
 .head-btn { 
     transition: 0.3s linear; 
     height: 35%;
-    margin-top: 5%;
+    margin-top: 10vh;
     background-color: rgb(255, 255, 255);
     box-shadow: 0;
     -moz-box-shadow: 0 3px 10px 0 #3b8ed6;
@@ -63,69 +73,53 @@ header a h1 {
 }
 
 button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 48%; height: 55px; }
-button[name="opções"] { 
-    width: 3%;
-    height: 50px; 
-    border-radius: 40%; 
-    transform: rotate(90deg); 
+button[name="opções"] {
+    width: 4vw;
+    height: 9vh; 
+    border-radius: 50%;
+    transform: rotate(90deg);
     margin-left: 3%;
     font-size: larger;
 }
-header h2 { transform: translateY(-11px); }
+header h2 {transform: translateY(-2vh);}
+
 
 
 
 main {
     margin-top: 5%;
-    height: 2250pt;
+    height: 510vh;
     background-color: whitesmoke;
     border-top: 3px solid black;
     padding-bottom: 10%;
 }
 
-#home {
+
+
+#MaisLidas {
     width: 50%;
+    padding-bottom: 2%;
+    margin-top: 3%;
+    margin-left: 1%;  
     float: left;
+}
+
+#MaisLidas h2 {
+    color: #0169C7;
+    border-bottom: 1px solid grey;
+    text-shadow: 2px 2px whitesmoke;
+    text-shadow: 1px 0px 2px grey;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    font-size: large;
+    width: 65%; 
     margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 6vh;
     padding-left: 2%;
 }
 
-#channels {
-    float: right;
-    width: 30%;
-    margin-right: 4%;
-    position: sticky;
-    top: 0;
-}
-
-#channels h3 {
-    border-left: 1px solid grey;
-    margin-top: 1%;
-    padding-left: 10%;
-}
-
-#home, #channels {
-    height: 22px;
-    text-shadow: 1px 0px grey;
-    color: #0169C7;
-    padding-bottom: 10px;
-    padding-top: 30px;
-    border-bottom: 1px solid grey;
-    font-size: small;
-}
-
-
-
-
-aside {
-    width: 50%;
-    padding-top: 3%;
-    padding-bottom: 2%;
-    margin-left: 1%;
-    float: left;
-}
-
-.last-news {
+.news {
     width: 100%;
     margin: 2%;
     margin-top: 5%;
@@ -135,9 +129,9 @@ aside {
     background-image: linear-gradient(rgb(233, 233, 233),lightblue,#0169C7);
 }
 
-.ltnw-links {display: flex;}
+.news-links {display: flex;}
 
-aside a img {
+#MaisLidas a img {
     height: 150px;
     width: 210px;
     margin-left: 3%;
@@ -145,31 +139,31 @@ aside a img {
     border-radius: 8px;
 }
 
-aside a h6 {
+#MaisLidas a h6 {
     font-size: smaller;
     margin-top: 15%;
     transition: 0.4s;
     color: black;
     transform: translateX(-9%);
 }
-aside a h6:hover {
+#MaisLidas a h6:hover {
     color: #0169C7;
     box-shadow: 0;
     text-shadow: 0px 1px 5px #5fb4ff;
 }
 
-aside a h5 {
+#MaisLidas a h5 {
     margin-top: 9%;
     margin-left: 3%;
     width: 5%;
     color: blue;
 }
 
-aside button {
+#MaisLidas button {
     font-size: large;
     font-weight: bolder;
     margin-left: 16%;
-    margin-top: 15%;
+    margin-top: 12%;
     width: 70%;
     padding: 2%;
     color: whitesmoke;
@@ -178,7 +172,7 @@ aside button {
     border: none;
     transition: 0.5s;
 }
-aside button:hover {
+#MaisLidas button:hover {
     background-color: #3e92ff;
     color: white;
     text-shadow: 1px 1px 1px black;
@@ -188,26 +182,45 @@ aside button:hover {
 
 
 
-#channelspainel {
+aside {
     float: right;
-    width: 38%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 40%;  
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: sticky;
+    margin-top: 3%;
     top: 0;
-    padding-top: 4%;
+}
+
+#channels { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#channels h3 {
+    color: #0169C7;
+    text-shadow: 2px 2px whitesmoke;
+    text-shadow: 1px 0px 2px grey;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    font-size: large;
+    width: 28vw;
+    margin-top: 20px;
+    margin-bottom: 2vh;
+    padding-left: 2%; 
+    position: sticky;
+    top: 0;
 }
 
 .sites {
-    width: 26%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    width: 35%;
+    padding: 2% 0 2%;
     text-align: center;
     border-radius: 15px;
-    margin-top: 4%;
+    margin-top: 20px;
     transition: 0.5s; 
 }
 .sites[name="M"] {background-color: lightblue;}
@@ -221,29 +234,32 @@ aside button:hover {
     -webkit-box-shadow: 1px 5px 10px 0 #0169C7;
 }
 
-.img-sts {height: 65px; width: 90px;}
-
 .sites h5 {color: black;}
 
-#channelspainel h4 {
-    padding-bottom: 8%;
-    margin-top: 20%;
+.icon-site {height: 65px; width: 90px;}
+
+
+
+
+#share {width: 40%;}
+
+#share h4 {
+    text-align: center;
+    padding-bottom: 4%;
+    margin-top: 30%;
     text-shadow: 2px 2px whitesmoke;
     text-shadow: 1px 0px 2px grey;
     color: #0169C7;
     border-bottom: 1px solid grey;
-    font-size: smaller;
+    font-size: medium;
 }
 
 .button-channels {
     border-radius: 1%;
-    display: flex;
-    flex-wrap: wrap;
     height: 25px;
     width: 30px;
-    margin: 10px;
-    padding-top: 5px;
-    padding-left: 10%;
+    margin: 15px;
+    margin-left: 20px
 }
 
 
@@ -254,13 +270,12 @@ aside button:hover {
     background-image: linear-gradient(blue,darkblue,#034680,#0169C7);
     width: 100%;
     font-size: small;
-    border-radius: 10px;
     border: 1px solid whitesmoke;
     border-left: none;
     border-right: none;
 }
 
-.display { list-style: none; float: left; }
+.display {list-style: none; float: left;}
 
 .display li {
     position: relative;
@@ -319,6 +334,10 @@ aside button:hover {
     display: block;
     width: 100%;
 }
+
+
+
+
 #category {
     width: 100%;
     background-image: linear-gradient(white, whitesmoke, lightgrey, grey);
@@ -327,15 +346,12 @@ aside button:hover {
     padding-top: 2%;
 }
 
-
-
-
 #category h3 {
     margin-left: 3%;
     height: 20px;
     text-shadow: 2px 2px lightblue;
     border-bottom: grey 1px solid;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
     width: 93%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -350,7 +366,7 @@ aside button:hover {
     padding-right: 2%;
 }
 
-#list li {margin-bottom: 40px;}
+#list li {margin-bottom: 43px; font-size: smaller;}
 
 .pages-links:link, .pages-links:visited {
     color: black;
