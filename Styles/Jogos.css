@@ -56,7 +56,7 @@ header a h4 {
 .head-btn {
     transition: 0.3s linear;
     height: 35%;
-    margin-top: 4%;
+    margin-top: 10vh;
     background-color: rgb(255, 255, 255);
     box-shadow: 0;
     -moz-box-shadow: 0 3px 10px 0 #3b8ed6;
@@ -79,12 +79,7 @@ header a h4 {
     border: none;
 }
 
-button[name="serviço"] {
-    width: 9%;
-    border-radius: 10px;
-    margin-left: 41%;
-    height: 55px;
-}
+button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 40vw; height: 55px;}
 button[name="opções"] {
     width: 4vw;
     height: 9vh; 
@@ -152,7 +147,6 @@ main {
     color: black;
     transform: translateX(-9%);
 }
-
 #EVL-news a h6:hover {
     color: #0169C7;
     box-shadow: 0;
@@ -179,7 +173,6 @@ main {
     border: none;
     transition: 0.5s;
 }
-
 #EVL-news button:hover {
     background-color: crimson;
     color: white;
@@ -278,7 +271,6 @@ aside {
     background-image: linear-gradient(red, crimson, darkred, rgb(102, 7, 26));
     width: 100%;
     font-size: small;
-    border-radius: 10px;
     border: 1px solid whitesmoke;
     border-left: none;
     border-right: none;
@@ -305,7 +297,6 @@ aside {
     display: block;
     transition: 0.4s linear;
 }
-
 .display li a:hover {
     color: white;
     box-shadow: 0;
@@ -313,7 +304,6 @@ aside {
     -webkit-box-shadow: 0 3px 35px 0 crimson;
     text-shadow: 0px 0px 10px crimson;
 }
-
 .display li a:active {
     background-color: darkred;
     color: red;
@@ -331,12 +321,7 @@ aside {
     display: none;
     width: 100%;
 }
-
-.display li:hover ul {
-    display: block;
-    height: 0;
-    border-radius: 10px;
-}
+.display li:hover ul {display: block; height: 0; border-radius: 10px;}
 
 .display li ul li {
     background-image: linear-gradient(red, crimson, darkred, rgb(102, 7, 26));
@@ -377,7 +362,7 @@ aside {
     padding-right: 2%;
 }
 
-#list li {margin-bottom: 42px; font-size: smaller;}
+#list li {margin-bottom: 43px; font-size: smaller;}
 
 .pages-links:link, .pages-links:visited {
     color: black;
@@ -389,15 +374,8 @@ aside {
     padding-left: 6%;
 }
 
-.pages-links:link:active, .pages-links:visited:active {
-    color: #0169C7;
-}
-
-.pages-links:hover {
-    color: rgb(28, 28, 252);
-    box-shadow: 0;
-    text-shadow: 0px 0px 1px rgb(28, 28, 252);
-}
+.pages-links:link:active, .pages-links:visited:active {color: #0169C7;}
+.pages-links:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shadow: 0px 0px 1px rgb(28, 28, 252);}
 
 
 
