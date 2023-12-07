@@ -29,6 +29,7 @@ header {
 }
 
 header a {display: flex;}
+
 header a img { margin-left: 1%; margin-top: 1%; height: 165px; width: 200px; }
 
 header a h1 {
@@ -51,7 +52,7 @@ header a h5 {
 .head-btn { 
   transition: 0.3s linear; 
   height: 35%;
-  margin-top: 5%;
+  margin-top: 10vh;
   background-color: rgb(255, 255, 255);
   box-shadow: 0;
   -moz-box-shadow: 0 3px 10px 0 #3b8ed6;
@@ -74,16 +75,16 @@ header a h5 {
   border: none;
 }
 
-button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 42%; height: 55px; }
-button[name="opções"] { 
-  width: 3%;
-  height: 50px; 
-  border-radius: 40%; 
-  transform: rotate(90deg); 
+button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 40vw; height: 55px; }
+button[name="opções"] {
+  width: 4vw;
+  height: 9vh; 
+  border-radius: 50%;
+  transform: rotate(90deg);
   margin-left: 3%;
   font-size: larger;
 }
-header h2 { transform: translateY(-11px); }
+header h2 {transform: translateY(-2vh);}
 
 
 
@@ -152,7 +153,7 @@ main {
   font-size: large;
   font-weight: bolder;
   margin-left: 16%;
-  margin-top: 15%;
+  margin-top: 12%;
   width: 70%;
   padding: 2%;
   color: whitesmoke;
@@ -260,13 +261,12 @@ aside {
   background-image: linear-gradient(green, darkgreen, #189c39, #05dd05);
   width: 100%;
   font-size: small;
-  border-radius: 10px;
   border: 1px solid whitesmoke;
   border-left: none;
   border-right: none;
 }
 
-.display { list-style: none; float: left; }
+.display {list-style: none; float: left;}
 
 .display li {
   position: relative;
@@ -311,12 +311,7 @@ aside {
   display: none;
   width: 100%;
 }
-
-.display li:hover ul {
-  display: block;
-  height: 0;
-  border-radius: 10px;
-}
+.display li:hover ul {display: block; height: 0; border-radius: 10px;}
 
 .display li ul li {
   background-image: linear-gradient(green, darkgreen, #189c39, #05dd05);
@@ -357,7 +352,7 @@ aside {
   padding-right: 2%;
 }
 
-#list li { margin-bottom: 40px; }
+#list li {margin-bottom: 43px; font-size: smaller;}
 
 .pages-links:link, .pages-links:visited {
   color: black;
