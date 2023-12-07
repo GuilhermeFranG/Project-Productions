@@ -32,6 +32,7 @@ header {
 }
 
 header a {display: flex;}
+
 header a img {height: 255px; width: 280px;}
 
 header a h1 {
@@ -272,13 +273,12 @@ aside {
     background-image: linear-gradient(#033746,#015d72,#2f7d8f);
     width: 100%;
     font-size: small;
-    border-radius: 10px;
     border: 1px solid whitesmoke;
     border-left: none;
     border-right: none;
 }
 
-.display { list-style: none; float: left; }
+.display {list-style: none; float: left;}
 
 .display li {
     position: relative;
@@ -368,7 +368,7 @@ aside {
     padding-right: 2%;
 }
 
-#list li {margin-bottom: 40px; font-size: smaller;}
+#list li {margin-bottom: 43px; font-size: smaller;}
 
 .pages-links:link, .pages-links:visited {
     color: black;
