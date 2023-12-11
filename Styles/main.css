@@ -80,68 +80,45 @@ header h2 { transform: translateY(-11px); }
 
 
 
-main { 
-  height: 120vh; 
-  background-color: whitesmoke; 
-  border-top: 3px solid black; 
-  padding-bottom: 10%;
-}
-
-#home { width: 78%; float: left; text-align: center; margin-left: 2%;}
-
-#channels { float: right; width: 18%; margin-right: 2%; }
-#channels h3 {
-  border-left: 1px solid grey; 
-  margin-top: 1%;
-  padding-left: 1vw;
-}
-
-#home, #channels {
-  height: 22px;
-  text-shadow: 2px 2px lightblue;
-  color: #0169C7;
-  padding-bottom: 5vh;
-  padding-top: 10px;
+#painel {
+  background-color: whitesmoke;
+  border-top: 3px solid black;
   border-bottom: 1px solid grey;
-  font-size: small;
+  height: 121vh; 
 }
 
-#homepainel { 
-  width: 80%; 
+main, aside{
+  height: 120vh; 
+  margin-bottom: 20vh;
+}
+
+main { 
+  background-color: white;
+  display: flex; flex-wrap: wrap;
+  padding-bottom: 10%;
+  width: 78%; 
   float: left;  
-  border-right: 1px solid grey; 
-  margin-top: 1%;
-  padding-right: 1%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
-#channelspainel {
-  float: right;
-  width: 17%;  
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-right: 2vw;
-  margin-top: 5px;
-}
-
-#channelspainel, #homepainel {display: flex; flex-wrap: wrap;}
 
 .news {
-  width: 209px;
-  margin: 25px;
-  margin-top: 10vh;
+  width: 195px;
+  margin: 30px;
+  margin-top: 15vh;
   border: 2px solid;
   background-color: #0169C7;
   border-radius: 15px;
   padding-bottom: 2%;
 }
 
-.img-nws {
+.news-img {
   border-radius: 13px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom: 2px solid;
   height: 120px;
-  width: 205px;
+  width: 192px;
   margin-bottom: 10%;
 }
 
@@ -157,19 +134,44 @@ main {
 .news-links:link:active, .news-links:visited:active { color: lightblue; }
 .news-links:hover { color: whitesmoke; text-shadow: 0px 0px 2px; box-shadow: 0; }
 
+
+
+
+aside {
+  width: 22%;  
+  float: right;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2vw;
+  background-color: whitesmoke;
+}
+
+#channels h3 {
+  color: #0169C7;
+  padding-bottom: 2vh;
+  border-bottom: 1px solid grey;
+  margin-top: 2vh;
+  margin-right: 4vw;
+  text-shadow: 2px 2px lightblue;
+}
+
+#share {
+  padding-right: 2vw;
+  margin-top: 5px;
+}
+
+.sites, #share {margin-left: 3vw;}
+
 .sites {
-  width: 60%;
-  padding-top: 7%;
-  padding-bottom: 5%;
+  width: 55%;
+  padding: 7% 0 5% 0;
   text-align: center;
   border-radius: 15px;
-  margin-top: 7%;
+  margin-top: 5vh;
+  margin-left: 4vw;
   transition: 0.5s; 
 }
-.sites[name="M"] {background-color: lightblue;}
-.sites[name="V"] {background-color: #9a0000;}
-.sites[name="S"] {background-color: #05dd05;}
-
 .sites:hover {
   cursor: pointer;
   box-shadow: 0;
@@ -177,22 +179,31 @@ main {
   -webkit-box-shadow: 1px 5px 10px 0 #0169C7;
 }
 
-.img-sts {height: 70px; width: 95px;}
+.sites[name="M"] {background-color: rgba(173, 216, 230, 0);}
+.sites[name="V"] {background-color: #9a000000;}
+.sites[name="S"] {background-color: #05dd0500;}
+.sites[name="M"]:hover {background-color: lightblue;}
+.sites[name="V"]:hover {background-color: #9a0000;}
+.sites[name="S"]:hover {background-color: #05dd05;}
 
-.sites h5 {color: black; }
 
-#channelspainel h4 {
-  padding-bottom: 8%;
-  margin-top: 50%;
+.icon-site {height: 70px; width: 95px; border-radius: 10px; margin-bottom: 10px;}
+
+.sites h5 {color: black;}
+
+#share h4 {
   color: #0169C7;
+  padding-bottom: 1vh;
   border-bottom: 1px solid grey;
+  margin-top: 12vh;
+  margin-right: 2vw;
   text-shadow: 2px 2px lightblue;
-  font-size: medium;
+  text-align: center;
+  font-size: 14px;
 }
 
 .button-channels {
   border-radius: 2px;
-  display: flex; flex-wrap: wrap;
   height: 42px; 
   width: 35px;
   margin: 10px;
@@ -338,17 +349,13 @@ center span {font-size: 65px;}
 #last-news {
   width: 100%;
   height: 100%;
-  padding-top: 3%;
   padding-bottom: 2%;
-  border-top: 1px solid grey;
 }
 
 #last-news h2 {
   border-bottom: 1px solid grey;
   padding-bottom: 1%;
   padding-left: 1%;
-  margin-top: 5%;
-  margin-bottom: 5%;
   margin-left: 2%;
   width: 50%;
 }
