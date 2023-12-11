@@ -221,13 +221,9 @@ aside {
     padding: 2% 0 2%;
     text-align: center;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 18px;
     transition: 0.5s; 
 }
-.sites[name="M"] {background-color: lightblue;}
-.sites[name="V"] {background-color: #9a0000;}
-.sites[name="S"] {background-color: #05dd05;}
-
 .sites:hover {
     cursor: pointer;
     box-shadow: 0;
@@ -235,9 +231,17 @@ aside {
     -webkit-box-shadow: 1px 5px 10px 0 crimson;
 }
 
-.sites h5 {color: black;}
+.sites[name="M"] {background-color: rgba(173, 216, 230, 0);}
+.sites[name="V"] {background-color: #9a000000;}
+.sites[name="S"] {background-color: #05dd0500;}
+.sites[name="M"]:hover {background-color: lightblue;}
+.sites[name="V"]:hover {background-color: #9a0000;}
+.sites[name="S"]:hover {background-color: #05dd05;}
 
-.icon-site {height: 65px; width: 90px;}
+
+.icon-site {height: 70px; width: 95px; border-radius: 10px; margin-bottom: 10px;}
+
+.sites h5 {color: black;}
 
 
 
@@ -247,7 +251,7 @@ aside {
 #share h4 {
     text-align: center;
     padding-bottom: 4%;
-    margin-top: 30%;
+    margin-top: 24%;
     text-shadow: 2px 2px whitesmoke;
     text-shadow: 1px 0px 2px grey;
     color: crimson;
