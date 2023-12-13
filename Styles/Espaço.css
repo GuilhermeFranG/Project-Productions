@@ -94,7 +94,7 @@ header h2 { transform: translateY(-11px); }
 
 main { 
     margin-top: 5%;
-    height: 510vh; 
+    height: 535vh; 
     background-color: whitesmoke; 
     border-top: 3px solid black; 
     padding-bottom: 10%;
@@ -125,7 +125,7 @@ main {
 }
 
 .news {
-    width: 100%;
+    width: 53vw;
     margin: 2%;
     margin-top: 6%;
     padding-bottom: 3%;
@@ -136,33 +136,35 @@ main {
 
 .news-links {display: flex;}
 
-#Astro-news a img {
-    height: 150px;
-    width: 210px;
+.news a img {
+    max-height: 160px;
+    max-width: 235px;
+    height: 160vh;
+    width: 235vw;
     margin-left: 3%;
     margin-top: 4%;
     border-radius: 8px;
 }
 
-#Astro-news a h6 {
+.news a h6 {
     font-size: smaller;
     margin-top: 15%;
     transition: 0.4s;
     color: black;
     transform: translateX(-9%);
-    text-shadow: 1px 1px 12px magenta;
+    text-shadow: 1px 1px 20px magenta;
 }
-#Astro-news a h6:hover {
+.news a h6:hover {
     color: #0169C7;
     box-shadow: 0;
 }
 
-#Astro-news a h5 {
+.news a h5 {
     margin-top: 9%;
     margin-left: 3%;
     width: 5%;
     color: #033746;
-    text-shadow: 1px 1px 12px magenta;
+    text-shadow: 1px 1px 12px #ffd5dc;
 }
 
 #Astro-news button {
@@ -205,6 +207,7 @@ aside {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-left: 5vw;
 }
 #channels h3 {
     color: magenta;
@@ -213,7 +216,7 @@ aside {
     padding-bottom: 10px;
     border-bottom: 1px solid grey;
     font-size: large;
-    width: 28vw;
+    width: 25vw;
     margin-top: 20px;
     margin-bottom: 2vh;
     padding-left: 2%; 
@@ -222,11 +225,11 @@ aside {
 }
 
 .sites {
-    width: 35%;
-    padding: 2% 0 2%;
+    width: 43%;
+    padding: 3% 0 2%;
     text-align: center;
     border-radius: 15px;
-    margin-top: 18px;
+    margin-top: 15px;
     transition: 0.5s; 
 }
 .sites:hover {
@@ -251,7 +254,7 @@ aside {
 
 
 
-#share {width: 40%;}
+#share {width: 40%; margin-left: 5vw;}
 
 #share h4 {
     text-align: center;
