@@ -28,11 +28,12 @@ header a img {
 }
 
 header a h3 {
-    width: 365px;
-    color: black;
-    margin-top: 65px;
-    margin-left: 15px;
-    font-size: 20px;
+    width: 400px;
+    color: #0169C7;
+    text-shadow: 1px 1px black;
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 22px;
 }
 
 #lupa {
@@ -41,7 +42,7 @@ header a h3 {
     height: 45px;
     width: 50px;
     margin-top: 50px;
-    margin-left: 10%;
+    margin-left: 8%;
     transition: 0.3s;
 }
 #lupa:hover {
@@ -54,7 +55,7 @@ header a h3 {
 #pesquisa {
     padding: 15px;
     height: 40px;
-    width: 32%;
+    width: 32vw;
     margin-top: 52px;
     margin-left: 2vw;
     border-radius: 6px;
