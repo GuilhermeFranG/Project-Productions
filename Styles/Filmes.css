@@ -81,7 +81,7 @@ button[name="opções"] {
   height: 9vh; 
   border-radius: 50%;
   transform: rotate(90deg);
-  margin-left: 3%;
+  margin-left: 4%;
   font-size: larger;
 }
 header h2 {transform: translateY(-2vh);}
@@ -91,7 +91,7 @@ header h2 {transform: translateY(-2vh);}
 
 main { 
   margin-top: 5%;
-  height: 510vh; 
+  height: 565vh; 
   background-color: whitesmoke; 
   border-top: 3px solid black; 
   padding-bottom: 10%;
@@ -121,7 +121,7 @@ main {
 }
 
 .news {
-  width: 100%;
+  width: 55vw;
   margin: 2%;
   margin-top: 5%;
   padding-bottom: 3%;
@@ -132,22 +132,30 @@ main {
 
 .news-links { display: flex; }
 
-#PRO-news a img { height: 150px; width: 210px ; margin-left: 3%; margin-top: 4%; border-radius: 8px;}
+.news a img {
+  max-height: 175px;
+  max-width: 260px;
+  height: 175vh;
+  width: 260vw; 
+  margin-left: 3%; 
+  margin-top: 4%; 
+  border-radius: 8px;
+}
 
-#PRO-news a h6 { 
-  font-size: smaller;
+.news a h6 { 
+  font-size: 15px;
   margin-top: 15%;
   transition: 0.4s;
   color: black;
   transform: translateX(-9%);
 }
-#PRO-news a h6:hover { 
+.news a h6:hover { 
   color: #0169C7; 
   box-shadow: 0;
   text-shadow: 0px 1px 5px #5fb4ff;
 }
 
-#PRO-news a h5 { margin-top: 9%; margin-left: 3%; width: 5%; color: green;}
+.news a h5 { margin-top: 9%; margin-left: 3%; width: 5%; color: green;}
 
 #PRO-news button {
   font-size: large;
@@ -207,12 +215,12 @@ aside {
 }
 
 .sites {
-  width: 35%;
+  width: 38%;
   padding: 2% 0 2%;
   text-align: center;
   border-radius: 15px;
   transition: 0.5s; 
-  margin-top: 18px;
+  margin-top: 15px;
 }
 .sites:hover {
   cursor: pointer;
