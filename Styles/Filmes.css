@@ -140,6 +140,7 @@ main {
   margin-left: 3%; 
   margin-top: 4%; 
   border-radius: 8px;
+  border: 2px solid black;
 }
 
 .news a h6 { 

@@ -361,7 +361,7 @@ center span {font-size: 65px;}
 }
 
 .LN-template {
-  width: 52%;
+  width: 55%;
   margin: 2%;
   margin-top: 2%;
   padding-bottom: 3%;
@@ -378,11 +378,20 @@ center span {font-size: 65px;}
 
 .LN-link {display: flex;}
 
-#last-news a img { height: 170px; width: 240px ; margin-left: 3%; margin-top: 5%; border-radius: 8px; }
+#last-news a img {
+  max-height: 175px;
+  max-width: 260px;
+  height: 175vh;
+  width: 260vw; 
+  margin-left: 3%; 
+  margin-top: 4%; 
+  border-radius: 12px;
+  border: 2px solid black;
+}
 
 #last-news a h6 { 
-  font-size: 14px;
-  margin-top: 15%;
+  font-size: 15px;
+  margin-top: 16%;
   transition: 0.4s;
   color: black;
   transform: translateX(-9%);
