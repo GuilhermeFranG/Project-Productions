@@ -187,6 +187,11 @@ main {
     text-shadow: 1px 1px 1px black;
     cursor: pointer;
 }
+#Astro-news button:active {
+    background-color: #f55d2e;
+    color: black;
+    text-shadow: none;
+}
 
 
 
