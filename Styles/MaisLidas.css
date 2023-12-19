@@ -236,9 +236,9 @@ aside {
 .sites[name="M"] {background-color: rgba(173, 216, 230, 0);}
 .sites[name="V"] {background-color: #9a000000;}
 .sites[name="S"] {background-color: #05dd0500;}
-.sites[name="M"]:hover {background-color: lightblue;}
-.sites[name="V"]:hover {background-color: #9a0000;}
-.sites[name="S"]:hover {background-color: #05dd05;}
+.sites[name="M"]:hover {background-image: linear-gradient(rgb(142, 211, 235),lightblue,whitesmoke);}
+.sites[name="V"]:hover {background-color: #9a0000; text-shadow: 2px 2px 6px lightcoral;}
+.sites[name="S"]:hover {background-image: linear-gradient(lime,palegreen,whitesmoke);}
 
 
 .icon-site {height: 70px; width: 95px; border-radius: 10px; margin-bottom: 10px;}
