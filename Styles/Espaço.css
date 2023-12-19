@@ -155,10 +155,7 @@ main {
     transform: translateX(-9%);
     text-shadow: 1px 1px 20px magenta;
 }
-.news a h6:hover {
-    color: #0169C7;
-    box-shadow: 0;
-}
+.news a h6:hover {color: #0169C7;}
 
 .news a h5 {
     margin-top: 9%;

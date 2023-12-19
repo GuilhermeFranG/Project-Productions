@@ -123,7 +123,7 @@ main {
 }
 
 .news-links:link, .news-links:visited {
-  text-shadow: 3px 2px #157fdb;
+  text-shadow: 1px 1px 3px #37a2ff;
   color: black;
   transition: 0.3s linear;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -131,7 +131,7 @@ main {
   text-align: center;
 }
 
-.news-links:hover { color: whitesmoke; text-shadow: 0px 0px 2px; box-shadow: 0; }
+.news-links:hover { color: whitesmoke; text-shadow: 0px 0px 6px; box-shadow: 0; }
 .news-links:active {color: lightblue;}
 
 
@@ -397,11 +397,7 @@ center span {font-size: 65px;}
   color: black;
   transform: translateX(-9%);
 }
-#last-news a h6:hover { 
-  color: #0169C7; 
-  box-shadow: 0;
-  text-shadow: 0px 1px 5px #5fb4ff;
-}
+#last-news a h6:hover {color: #0169C7;}
 
 .news-type { margin-top: 12%; margin-left: 3%; width: 5%; }
 .news-type[name="C"] {color: #000080;}
