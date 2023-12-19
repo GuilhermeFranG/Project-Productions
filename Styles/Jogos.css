@@ -387,8 +387,8 @@ aside {
     padding-left: 6%;
 }
 
-.pages-links:link:active, .pages-links:visited:active {color: #0169C7;}
 .pages-links:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shadow: 0px 0px 1px rgb(28, 28, 252);}
+.pages-links:active {color: #0169C7;}
 
 
 

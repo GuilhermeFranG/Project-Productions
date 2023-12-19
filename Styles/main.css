@@ -131,8 +131,9 @@ main {
   text-align: center;
 }
 
-.news-links:link:active, .news-links:visited:active { color: lightblue; }
 .news-links:hover { color: whitesmoke; text-shadow: 0px 0px 2px; box-shadow: 0; }
+.news-links:active {color: lightblue;}
+
 
 
 
@@ -474,8 +475,8 @@ center span {font-size: 65px;}
   padding-left: 6%;
 }
 
-.pages-links:link:active, .pages-links:visited:active {color: #0169C7;}
 .pages-links:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shadow: 0px 0px 1px rgb(28, 28, 252);}
+.pages-links:active {color: #0169C7;}
 
 
 

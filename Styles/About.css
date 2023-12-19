@@ -1,4 +1,8 @@
-* {margin: 0%; padding: 0%; box-sizing: border-box;}
+* {
+    margin: 0%; 
+    padding: 0%; 
+    box-sizing: border-box;
+}
 
 
 
@@ -7,7 +11,11 @@
 ::selection {color: #000080; background-color: #0169C7; text-shadow: 0px 0px 18px whitesmoke;}
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
 a {text-decoration: none;}
+
+
+
 
 .grid-container {
     display: grid;
@@ -21,7 +29,7 @@ a {text-decoration: none;}
     padding: 8px;
 }
 
-.grid-container>div {
+.grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 30px;
 }
@@ -149,7 +157,6 @@ main {
 .Produc--links {color: black; transition: 0.3s linear;}
 .Produc--links:hover , .TI:hover {color: #0067c6; text-shadow: 1px 1px black; cursor: pointer;}
 .Produc--links:active {color: orangered; text-shadow: none;}
-
 
 
 

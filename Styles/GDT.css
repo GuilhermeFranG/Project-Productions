@@ -8,7 +8,8 @@
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-a {text-decoration: none; cursor: pointer;}
+a {text-decoration: none; cursor: pointer; color: black;}
+
 
 
 
@@ -122,4 +123,19 @@ header a h3 {
     border: 1px solid lightgray;
     display: block;
     width: 100%;
+}
+
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-small;
+    background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
+    border-top: 2px solid rgba(0, 0, 0, 0.829);
+    text-shadow: 1px 1px 8px lightblue;
 }
