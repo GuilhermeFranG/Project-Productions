@@ -30,7 +30,8 @@ header {
 
 header a {display: flex;}
 
-header a img { margin-left: 3%; margin-top: 3%; height: 165px; width: 200px; }
+header a img {margin: 3% 0 0 3%; height: 165px; width: 200px; }
+
 header a h1 {
   margin-left: 10%;
   color: #0067c6;
@@ -66,7 +67,7 @@ header a h1 {
   border: none;
 }
 
-button[name="serviço"] { width: 9%; border-radius: 10px; margin-left: 46vw; height: 55px;}
+button[name="serviço"] {width: 9%; border-radius: 10px; margin-left: 46vw; height: 55px;}
 button[name="opções"] { 
   width: 4vw;
   height: 9vh; 
@@ -103,8 +104,7 @@ main {
 
 .news {
   width: 195px;
-  margin: 30px;
-  margin-top: 15vh;
+  margin: 15vh 30px 30px 30px;
   border: 2px solid;
   background-color: #0169C7;
   border-radius: 15px;
@@ -149,15 +149,11 @@ aside {
   color: #0169C7;
   padding-bottom: 2vh;
   border-bottom: 1px solid grey;
-  margin-top: 2vh;
-  margin-right: 4vw;
+  margin: 2vh 4vw 0 0;
   text-shadow: 2px 2px lightblue;
 }
 
-#share {
-  padding-right: 2vw;
-  margin-top: 5px;
-}
+#share {padding-right: 2vw; margin-top: 5px;}
 
 .sites, #share {margin-left: 3vw;}
 
@@ -166,8 +162,7 @@ aside {
   padding: 7% 0 5% 0;
   text-align: center;
   border-radius: 15px;
-  margin-top: 5vh;
-  margin-left: 4vw;
+  margin: 5vh 0 0 4vw;
   transition: 0.5s; 
 }
 .sites:hover {
@@ -193,8 +188,7 @@ aside {
   color: #0169C7;
   padding-bottom: 1vh;
   border-bottom: 1px solid grey;
-  margin-top: 12vh;
-  margin-right: 2vw;
+  margin: 12vh 2vw 0 0;
   text-shadow: 2px 2px lightblue;
   text-align: center;
   font-size: 14px;
@@ -217,9 +211,7 @@ center {
   opacity: 0.24;
   color: #000080;
   width: 40%;
-  margin-left: 30vw;
-  margin-bottom: 4%;
-  margin-top: 4%;
+  margin: 4% 0 4% 30vw;
   transition: 0.4s linear;
   border-radius: 20px;
   padding: 10px;
