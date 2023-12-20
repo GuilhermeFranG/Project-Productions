@@ -105,8 +105,7 @@ main {
 #Astro-news {
     width: 50%;
     padding-bottom: 2%;
-    margin-top: 3%;
-    margin-left: 1%;
+    margin: 3% 0 0 1%;
     float: left;
 }
 
@@ -114,20 +113,16 @@ main {
     text-shadow: 2px 2px whitesmoke;
     text-shadow: 1px 0px 2px grey;
     color: magenta;
-    padding-bottom: 10px;
     border-bottom: 1px solid grey;
     font-size: large;
     width: 65%; 
-    margin-left: 5%;
-    margin-top: 20px;
-    margin-bottom: 6vh;
-    padding-left: 2%; 
+    margin: 20px 0 6vh 5%;
+    padding: 0 0 10px 2%; 
 }
 
 .news {
     width: 53vw;
-    margin: 2%;
-    margin-top: 6%;
+    margin: 6% 2% 2% 2%;
     padding-bottom: 3%;
     border-bottom: 1px solid grey;
     border-radius: 10px;
@@ -141,8 +136,7 @@ main {
     max-width: 235px;
     height: 160vh;
     width: 235vw;
-    margin-left: 3%;
-    margin-top: 4%;
+    margin: 4% 0 0 3%;
     border-radius: 8px;
     border: 2px solid black;
 }
@@ -158,8 +152,7 @@ main {
 .news a h6:hover {color: #0169C7;}
 
 .news a h5 {
-    margin-top: 9%;
-    margin-left: 3%;
+    margin: 9% 0 0 3%;
     width: 5%;
     color: #033746;
     text-shadow: 1px 1px 12px #ffd5dc;
@@ -168,8 +161,7 @@ main {
 #Astro-news button {
     font-size: large;
     font-weight: bolder;
-    margin-left: 16%;
-    margin-top: 15%;
+    margin: 15% 0 0 22%;
     width: 70%;
     padding: 2%;
     color: whitesmoke;
@@ -220,8 +212,7 @@ aside {
     border-bottom: 1px solid grey;
     font-size: large;
     width: 25vw;
-    margin-top: 20px;
-    margin-bottom: 2vh;
+    margin: 20px 0 2vh;
     padding-left: 2%; 
     position: sticky;
     top: 0;
@@ -274,8 +265,7 @@ aside {
     border-radius: 1%;
     height: 25px; 
     width: 30px;
-    margin: 15px;
-    margin-left: 16px;
+    margin: 15px 15px 15px 16px;
 }
 
 
@@ -372,8 +362,7 @@ aside {
 }
 
 #list {
-    margin-top: 2%;
-    margin-left: 2%;
+    margin: 2% 0 0 2%;
     display: block;
     list-style: none;
     border-right: grey 1px solid;
