@@ -46,7 +46,7 @@ header a h1 {
 header a h4 {
     margin-top: 75pt;
     color: #0067c6;
-    text-shadow: 0px 1px 20px white;
+    text-shadow: 1px 1px rgb(0, 44, 109);
     transform: translateX(-155pt);
     font-size: 16px;
 }
@@ -110,15 +110,12 @@ main {
 
 #EVL-news h2 {
     color: crimson;
-    border-bottom: 1px solid grey;
-    text-shadow: 2px 2px whitesmoke;
-    text-shadow: 1px 0px 2px grey;
-    padding-bottom: 10px;
+    text-shadow: 1px 1px rgb(255, 74, 110);
     border-bottom: 1px solid grey;
     font-size: large;
     width: 65%; 
     margin: 20px 0 6vh 5%;
-    padding-left: 2%;
+    padding: 0 0 10px 2%;
 }
 
 .news {
@@ -199,14 +196,12 @@ aside {
 }
 #channels h3 {
     color: crimson;
-    text-shadow: 2px 2px whitesmoke;
-    text-shadow: 1px 0px 2px grey;
-    padding-bottom: 10px;
+    text-shadow: 1px 1px rgb(255, 74, 110);
     border-bottom: 1px solid grey;
     font-size: large;
     width: 28vw;
     margin: 20px 0 2vh;
-    padding-left: 2%; 
+    padding: 0 0 10px 2%;
     position: sticky;
     top: 0;
 }
@@ -247,9 +242,8 @@ aside {
     text-align: center;
     padding-bottom: 4%;
     margin-top: 24%;
-    text-shadow: 2px 2px whitesmoke;
-    text-shadow: 1px 0px 2px grey;
     color: crimson;
+    text-shadow: 1px 1px rgb(255, 74, 110);
     border-bottom: 1px solid grey;
     font-size: medium;
 }

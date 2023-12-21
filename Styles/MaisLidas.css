@@ -232,9 +232,8 @@ aside {
     text-align: center;
     padding-bottom: 4%;
     margin-top: 24%;
-    text-shadow: 2px 2px whitesmoke;
-    text-shadow: 1px 0px 2px grey;
     color: #0169C7;
+    text-shadow: 2px 2px lightblue;
     border-bottom: 1px solid grey;
     font-size: medium;
 }
