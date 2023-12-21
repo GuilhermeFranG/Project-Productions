@@ -54,7 +54,7 @@ a {text-decoration: none;}
     font-size: 45px;
     margin: 60pt 0 0 25pt;
     color: #0169C7;
-    text-shadow: 3px 2px 10px white;
+    text-shadow: 2px 3px rgb(0, 44, 109);
 }
 
 .head-btn {
@@ -146,7 +146,7 @@ main {
 }
 
 .Produc--links {color: black; transition: 0.3s linear;}
-.Produc--links:hover , .TI:hover {color: #0067c6; text-shadow: 1px 1px black; cursor: pointer;}
+.Produc--links:hover , .TI:hover {color: #0067c6; text-shadow: 1px 1px rgb(0, 44, 109); cursor: pointer;}
 .Produc--links:active {color: orangered; text-shadow: none;}
 
 

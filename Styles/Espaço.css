@@ -48,7 +48,7 @@ header a h5 {
     color: #0088ff;
     font-size: 18px;
     transform: translateX(-130pt);
-    text-shadow: 1px 1px 6px magenta;
+    text-shadow: 1px 1px rgb(0, 44, 109);
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -110,9 +110,8 @@ main {
 }
 
 #Astro-news h2 { 
-    text-shadow: 2px 2px whitesmoke;
-    text-shadow: 1px 0px 2px grey;
     color: magenta;
+    text-shadow: 2px 2px rgb(253, 176, 230);
     border-bottom: 1px solid grey;
     font-size: large;
     width: 65%; 
@@ -206,14 +205,12 @@ aside {
 }
 #channels h3 {
     color: magenta;
-    text-shadow: 2px 2px whitesmoke;
-    text-shadow: 1px 0px 2px grey;
-    padding-bottom: 10px;
+    text-shadow: 2px 2px rgb(253, 176, 230);
     border-bottom: 1px solid grey;
     font-size: large;
     width: 25vw;
     margin: 20px 0 2vh;
-    padding-left: 2%; 
+    padding: 0 0 10px 2%; 
     position: sticky;
     top: 0;
 }
@@ -254,10 +251,9 @@ aside {
     text-align: center;
     padding-bottom: 4%;
     margin-top: 24%;
-    text-shadow: 2px 2px whitesmoke;
-    text-shadow: 1px 0px 2px grey;
-    border-bottom: 1px solid grey;
     color: magenta;
+    text-shadow: 2px 2px rgb(253, 176, 230);
+    border-bottom: 1px solid grey;
     font-size: medium;
 }
 

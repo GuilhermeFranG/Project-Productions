@@ -38,7 +38,7 @@ header a img {
 
 header a h1 {
     color: #0067c6;
-    text-shadow: 3px 2px 10px rgb(190, 290, 235);
+    text-shadow: 2px 3px rgb(0, 44, 109);
     font-family: 'Bebas Neue', sans-serif;
     font-size: 45px;
     margin: 10vh 0 0 10%;
@@ -90,6 +90,7 @@ main {
     background-color: whitesmoke;
     border-top: 3px solid black;
     padding-bottom: 10%;
+    background-color: whitesmoke;
 }
 
 
@@ -104,14 +105,11 @@ main {
 #MaisLidas h2 {
     color: #0169C7;
     border-bottom: 1px solid grey;
-    text-shadow: 2px 2px whitesmoke;
-    text-shadow: 1px 0px 2px grey;
-    padding-bottom: 10px;
-    border-bottom: 1px solid grey;
+    text-shadow: 2px 2px lightblue;
     font-size: large;
     width: 65%; 
     margin: 20px 0 6vh 5%;
-    padding-left: 2%;
+    padding: 0 0 10px 2%;
 }
 
 .news {
@@ -188,14 +186,12 @@ aside {
 }
 #channels h3 {
     color: #0169C7;
-    text-shadow: 2px 2px whitesmoke;
-    text-shadow: 1px 0px 2px grey;
-    padding-bottom: 10px;
+    text-shadow: 2px 2px lightblue;
     border-bottom: 1px solid grey;
     font-size: large;
     width: 28vw;
     margin: 20px 0 2vh;
-    padding-left: 2%; 
+    padding: 0 0 10px 2%; 
     position: sticky;
     top: 0;
 }
