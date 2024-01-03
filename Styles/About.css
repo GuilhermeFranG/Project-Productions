@@ -145,8 +145,8 @@ main {
     font-size: small;
 }
 
-.Produc--links {color: black; transition: 0.3s linear;}
-.Produc--links:hover , .TI:hover {color: #0067c6; text-shadow: 1px 1px rgb(0, 44, 109); cursor: pointer;}
+.Produc--links, #TI {color: black; transition: 0.3s linear;}
+.Produc--links:hover, #TI:hover {color: #0067c6; text-shadow: 1px 1px rgb(0, 44, 109); cursor: pointer;}
 .Produc--links:active {color: orangered; text-shadow: none;}
 
 
