@@ -8,12 +8,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
-
 ::selection {color: #000080; background-color: #0169C7; text-shadow: 0px 0px 18px whitesmoke;}
 
-a:link, a:visited {text-decoration: none;}
+body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
+a {text-decoration: none; color: rgb(131, 224, 255);}
 
 
 
@@ -464,6 +463,8 @@ center span {font-size: 65px;}
   height: 500px;
   border-top: 1px solid;
   padding-top: 2%;
+  bottom: 0;
+  position: relative;
 }
 
 #category h3 {
@@ -509,8 +510,16 @@ footer {
   bottom: 0%;
   width: 100%;
   text-align: center;
-  font-size: x-small;
+  font-size: xx-small;
+  color: rgb(216, 245, 255);
+  text-shadow: 1px 2px 2px darkblue;
+  font-weight: bolder;
   background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
   border-top: 2px solid rgba(0, 0, 0, 0.829);
-  text-shadow: 1px 0px #0169C7;
+}
+
+footer h5 a {
+  text-underline-offset: 1px;
+  text-decoration-thickness: 1px;
+  text-decoration: underline;
 }
