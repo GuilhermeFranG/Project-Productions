@@ -1,7 +1,6 @@
 # Criado por https://www.toptal.com/developers/gitignore/api/vuejs,visualstudiocode,windows
 # Edite em https://www.toptal.com/developers/gitignore?templates=vuejs,visualstudiocode,windows
 
-inutil.*
 # Histórico local para código do Visual Studio
 .história/
 
@@ -46,5 +45,3 @@ $RECYCLE.BIN/
 
 # Atalhos do Windows
 *.lnk
-
-# Fim de https://www.toptal.com/developers/gitignore/api/vuejs,visualstudiocode,windows
