@@ -14,16 +14,16 @@
 <html lang="pt-br">
 
 <head>
-   <title>Productions</title>
+   <title>Productions - Saiba tudo sobre Tecnologia, Ciência, Games, Filmes e séries</title>
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-   <link rel="stylesheet" href="../Styles/main.css" />
+   <link rel="stylesheet" href="main.css" />
    <link rel="icon" href="../Icons/GDT.png" type="image/x-icon" />
 </head>
 
 <body>
    <header>
-      <a href="GDT.html" title="GDT"><img src="../Icons/GDT.png" alt="logo" /></a>
+      <a href="../GDT/GDT.html" title="GDT"><img src="../Icons/GDT.png" alt="logo" /></a>
       <a href="Productions.html" title="Productions">
          <h1>Productions</h1>
       </a>
@@ -50,11 +50,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
-
 ::selection {color: #000080; background-color: #0169C7; text-shadow: 0px 0px 18px whitesmoke;}
 
-a:link, a:visited {text-decoration: none;}
+body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+a:link {text-decoration: none; color: rgb(2, 192, 255);}
+a:visited {color: rgb(131, 224, 255);}
+
 
 header {
   border-top: 8px solid darkblue;
@@ -65,13 +67,13 @@ header {
   width: 100%;
   height: 200px;
   display: flex;
-}   
+}
 ```
 
 #### ...e um pouco de JavaSCript
 
 ```JavaSCript
-        document.write("<dl>")
-          day = new Date()
-          hr = day.getHours()
+   document.write("<dl>")
+   day = new Date()
+   hr = day.getHours()
 ```
