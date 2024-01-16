@@ -8,8 +8,7 @@
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-a {text-decoration: none; cursor: pointer;}
-
+a {text-decoration: none; cursor: pointer; color: rgb(131, 224, 255);}
 
 
 
@@ -37,6 +36,9 @@ header a h3 {
     font-size: 22px;
 }
 
+
+
+
 #lupa {
     border: 3px solid whitesmoke;
     border-radius: 999%;
@@ -51,6 +53,8 @@ header a h3 {
     cursor: pointer;
 }
 #lupa:active {background-color: lightgray;}
+
+
 
 #pesquisa {
     padding: 15px;
@@ -133,6 +137,8 @@ footer {
     text-align: center;
     font-weight: bolder;
     font-size: x-small;
+    color: rgb(216, 245, 255);
+    text-shadow: 1px 2px 2px darkblue;
     background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
     border-top: 2px solid rgba(0, 0, 0, 0.829);
 }
