@@ -162,8 +162,9 @@ footer {
     font-weight: bolder;
 }
 
-footer a {color: rgb(131, 224, 255);}
-footer h5 a {
+footer a:link {color: rgb(2, 192, 255);}
+footer a:visited {color: rgb(131, 224, 255);}
+footer h5 a:link {
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
     text-decoration: underline;

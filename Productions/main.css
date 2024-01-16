@@ -12,7 +12,8 @@
 
 body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-a {text-decoration: none; color: rgb(131, 224, 255);}
+a:link {text-decoration: none; color: rgb(2, 192, 255);}
+a:visited {color: rgb(131, 224, 255);}
 
 
 
@@ -214,6 +215,7 @@ center {
   transition: 0.4s linear;
   border-radius: 20px;
   padding: 10px;
+  cursor: pointer;
 }
 center:hover {
   transform: scale(1.23, 1.23);
@@ -518,7 +520,7 @@ footer {
   border-top: 2px solid rgba(0, 0, 0, 0.829);
 }
 
-footer h5 a {
+footer h5 a:link {
   text-underline-offset: 1px;
   text-decoration-thickness: 1px;
   text-decoration: underline;
