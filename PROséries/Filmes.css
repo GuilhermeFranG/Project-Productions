@@ -12,8 +12,8 @@ body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 ::selection {color: lightgreen; background-color: #0dbd39; text-shadow: 0px 0px 18px whitesmoke;}
 
-a{ text-decoration: none; }
-
+a:link {text-decoration: none; color: purple;}
+a:visited {color: rgb(255, 0, 0);}
 
 
 
@@ -375,10 +375,10 @@ footer {
   font-weight: bolder;
   background-image: linear-gradient(#0dbd39,rgb(0, 179, 0),#0dbd39);
   border-top: 2px solid rgba(0, 0, 0, 0.829);
-  text-shadow: 1px 0px #0169C7;
+  text-shadow: 1px 1px 5px #0169C7;
 }
 
-footer h5 a {
+footer h5 a:link {
   text-underline-offset: 0px;
   text-decoration-thickness: 1px;
   text-decoration: underline;
