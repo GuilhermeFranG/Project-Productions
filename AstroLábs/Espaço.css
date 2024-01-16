@@ -15,8 +15,8 @@ body {
     margin: 60px;
 }
 
-a:link, a:visited {text-decoration: none;}
-
+a:link {text-decoration: none; color: magenta;}
+a:visited {color: rgb(255, 0, 76);} 
 
 
 
@@ -387,11 +387,19 @@ aside {
 footer {
     bottom: 0;
     width: 100%;
+    padding: 2px;
     text-align: center;
     font-size: x-small;
     box-shadow: 0;
     -moz-box-shadow: 0 3px 4px 0 magenta;
     -webkit-box-shadow: 0 3px 4px 0 magenta;
-    text-shadow: 1px 1px 16px #033746;
+    color:  #033746;
+    text-shadow: 1px 1px 16px #0896bd;
     border-top: 2px solid rgba(0, 0, 0, 0.829);
+}
+
+footer h5 a:link {
+    text-decoration-thickness: 1px;
+    text-decoration: underline;
+    text-underline-offset: 0px;
 }
