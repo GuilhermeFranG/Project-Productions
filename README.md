@@ -73,7 +73,11 @@ header {
 #### ...e um pouco de JavaSCript
 
 ```JavaSCript
-   document.write("<dl>")
-   day = new Date()
-   hr = day.getHours()
+   const currentTime = new Date();
+
+   const hours = currentTime.getHours();
+   const minutes = currentTime.getMinutes();
+   const seconds = currentTime.getSeconds();
+   const month = currentTime.getMonth() + 1;
+   const day = currentTime.getDate(); 
 ```

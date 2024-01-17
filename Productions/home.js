@@ -43,7 +43,7 @@ if (hours < 6) {
 else if (month === 12 && day === 24)  {
     greetingElement.innerHTML = "🎁👀";
     greetingElement.classList.add("greet")
-    messageElement.innerHTML = "É amanhã!<br>Feliz vespera de Natal!"
+    messageElement.innerHTML = "É amanhã!<br>Feliz véspera de Natal!"
 } else if (month === 12 && (day > 24 && day < 26))  {
     greetingElement.innerHTML = "🎄🎅";
     greetingElement.classList.add("greet")
