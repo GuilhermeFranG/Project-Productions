@@ -1,0 +1,400 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+::selection {color: #000080; background-color: #0169C7; text-shadow: 0px 0px 18px whitesmoke;}
+
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+a:link {text-decoration: none; color: rgb(2, 192, 255);}
+a:visited {color: rgb(131, 224, 255);}
+
+
+
+header {
+    border-top: 8px solid darkblue;
+    border-bottom: 10px solid darkblue;
+    border-radius: 5px;
+    font-size: larger;
+    background-image: linear-gradient(rgb(142, 211, 235),rgb(142, 211, 235),lightblue,whitesmoke);
+    width: 100%;
+    height: 190px;
+    display: flex;
+}
+
+header a {display: flex;}
+
+header a img {
+    margin: 3% 0 0 3%; 
+    height: 155px;
+    width: 190px;
+}
+
+header a h1 {
+    color: #0067c6;
+    text-shadow: 2px 3px rgb(0, 44, 109);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 45px;
+    margin: 10vh 0 0 10%;
+}
+
+.head-btn { 
+    transition: 0.3s linear; 
+    height: 35%;
+    margin-top: 10vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0;
+    -moz-box-shadow: 0 3px 10px 0 #3b8ed6;
+    -webkit-box-shadow: 0 3px 10px 0 #3b8ed6;
+    color: #0169C7;
+    font-size: 93%;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    border: none;
+}
+.head-btn:hover {
+    cursor: pointer;
+    background-color: #157fdb;
+    color: whitesmoke;
+    text-shadow: none;
+    border: 2px #0169C7 solid;
+}
+.head-btn:active, #MaisLidas a button:active {
+    background-color: #000080;
+    color: lightblue;
+    border: none;
+}
+
+button[name="serviço"] {width: 9%; border-radius: 10px; margin-left: 48%; height: 55px; }
+button[name="opções"] {
+    width: 4vw;
+    height: 9vh; 
+    border-radius: 50%;
+    transform: rotate(90deg);
+    margin-left: 3%;
+    font-size: larger;
+}
+header h2 {transform: translateY(-2vh);}
+
+
+
+
+main {
+    margin-top: 5%;
+    height: 565vh;
+    background-color: whitesmoke;
+    border-top: 3px solid black;
+    padding-bottom: 10%;
+    background-color: whitesmoke;
+}
+
+
+
+#MaisLidas {
+    width: 50%;
+    padding-bottom: 2%;
+    margin: 3% 0 0 1%;  
+    float: left;
+}
+
+#MaisLidas h2 {
+    color: #0169C7;
+    border-bottom: 1px solid grey;
+    text-shadow: 2px 2px lightblue;
+    font-size: large;
+    width: 65%; 
+    margin: 20px 0 6vh 5%;
+    padding: 0 0 10px 2%;
+}
+
+.news {
+    width: 55vw;
+    margin: 5% 2% 2% 2%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid grey;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(233, 233, 233),lightblue,#0169C7);
+}
+
+.news-links {display: flex;}
+
+.news a img {
+    max-height: 175px;
+    max-width: 260px;
+    height: 175vh;
+    width: 260vw; 
+    margin: 4% 0 0 3%; 
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+.news a h6 {
+    font-size: 15px;
+    margin-top: 15%;
+    transition: 0.4s;
+    color: black;
+    transform: translateX(-9%);
+}
+.news a h6:hover {color: #0169C7;}
+
+.news a h5 {margin: 9% 0 0 3%; width: 5%; color: blue;}
+
+#MaisLidas button {
+    font-size: large;
+    font-weight: bolder;
+    margin: 12% 0 0 20%;
+    width: 70%;
+    padding: 2%;
+    color: whitesmoke;
+    background-color: #157fdb;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
+}
+#MaisLidas button:hover {
+    background-color: #3e92ff;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}        
+
+
+
+
+aside {
+    float: right;
+    width: 40%;  
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    margin-top: 3%;
+    top: 0;
+}
+
+#channels { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#channels h3 {
+    color: #0169C7;
+    text-shadow: 2px 2px lightblue;
+    border-bottom: 1px solid grey;
+    font-size: large;
+    width: 28vw;
+    margin: 20px 0 2vh;
+    padding: 0 0 10px 2%; 
+    position: sticky;
+    top: 0;
+}
+
+.sites {
+    width: 38%;
+    padding: 2% 0 2%;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: 0.5s; 
+}
+.sites:hover {
+    cursor: pointer;
+    box-shadow: 0;
+    -moz-box-shadow: 1px 5px 10px 0 #0169C7;
+    -webkit-box-shadow: 1px 5px 10px 0 #0169C7;
+}
+
+.sites[name="M"] {background-color: rgba(173, 216, 230, 0);}
+.sites[name="V"] {background-color: #9a000000;}
+.sites[name="S"] {background-color: #05dd0500;}
+.sites[name="M"]:hover {background-image: linear-gradient(rgb(142, 211, 235),lightblue,whitesmoke);}
+.sites[name="V"]:hover {background-color: #9a0000; text-shadow: 2px 2px 6px lightcoral;}
+.sites[name="S"]:hover {background-image: linear-gradient(lime,palegreen,whitesmoke);}
+
+
+.icon-site {height: 70px; width: 95px; border-radius: 10px; margin-bottom: 10px;}
+
+.sites h5 {color: black;}
+
+
+
+
+#share {width: 40%;}
+
+#share h4 {
+    text-align: center;
+    padding-bottom: 4%;
+    margin-top: 24%;
+    color: #0169C7;
+    text-shadow: 2px 2px lightblue;
+    border-bottom: 1px solid grey;
+    font-size: medium;
+}
+
+.button-channels {
+    border-radius: 1%;
+    height: 25px;
+    width: 30px;
+    margin: 15px 15px 15px 20px;
+}
+
+
+
+
+#menu {
+    height: 30px;
+    background-image: linear-gradient(blue,darkblue,#034680,#0169C7);
+    width: 100%;
+    font-size: small;
+    border: 1px solid whitesmoke;
+    border-left: none;
+    border-right: none;
+}
+
+.display {list-style: none; float: left;}
+
+.display li {
+    position: relative;
+    float: left;
+    padding-top: 2px;
+    width: 268px;
+    background-image: linear-gradient(blue,darkblue,#034680,#0169C7);
+    border-radius: 10px;
+}
+
+.display li a {
+    cursor: pointer;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    transition: 0.4s linear;
+}
+.display li a:hover {
+    color: white;
+    box-shadow: 0;
+    -moz-box-shadow: 0 3px 15px 0 #3b8ed6;
+    -webkit-box-shadow: 0 3px 15px 0 #3b8ed6;
+    text-shadow: 0px 0px 5px #3b8ed6;
+}
+.display li a:active {
+    background-color: #000080;
+    color: lightblue;
+    border: none;
+    box-shadow: 0;
+    -moz-box-shadow: 0 3px 15px 0 #3b8ed6;
+    -webkit-box-shadow: 0 3px 15px 0 #3b8ed6;
+    text-shadow: 0px 0px 5px #3b8ed6;
+}
+
+.display li ul {
+    position: absolute;
+    bottom: 86px;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+
+.display li:hover ul { 
+    display: block;  
+    height: 0;
+    border-radius: 10px;
+}
+
+.display li ul li { 
+    background-image: linear-gradient(blue,darkblue,#034680,#0169C7);
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+
+
+
+
+#category {
+    width: 100%;
+    background-color: whitesmoke;
+    height: 500px;
+    border-top: 1px solid;
+    padding-top: 2%;
+    bottom: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#category h1 {
+    margin-left: 3%;
+    height: 20px;
+    text-shadow: 2px 2px lightblue;
+    border-bottom: grey 1px solid;
+    padding-bottom: 7vh;
+    width: 93%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list {
+    width: 100%;
+    margin: 5vh 0 0;
+    list-style-image: url(../../Icons/arrow-category.png);
+}
+
+.list li {
+    margin: 0 0 40px 6vw;
+    font-size: 15px;
+    width: 100%;
+}
+
+.list p {
+    margin: 12vh 0 0 5vw;
+    font-weight: 650;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: #0169C7;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+.list a {color: #0169C7;}
+
+.pages-links:link, .pages-links:visited{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.3s linear;
+    padding-left: 10px;
+}
+
+.pages-links:hover {color: rgb(28, 28, 252); text-shadow: 0px 0px 1px rgb(28, 28, 252);}
+.pages-links:active {color: #0169C7;}
+
+
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: xx-small;
+    color: rgb(216, 245, 255);
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
+    background-image: linear-gradient(#1e7af1, #0169C7, #216daf);
+    border-top: 2px solid rgba(0, 0, 0, 0.829);
+}
+
+footer h5 a:link {
+    text-underline-offset: 1px;
+    text-decoration-thickness: 1px;
+    text-decoration: underline;
+}

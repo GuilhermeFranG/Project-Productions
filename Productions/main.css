@@ -508,7 +508,7 @@ center span {font-size: 65px;}
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.3s linear;
-  padding-left: 6%;
+  padding-left: 10px;
 }
 
 .pages-links:hover {color: rgb(28, 28, 252); text-shadow: 0px 0px 1px rgb(28, 28, 252);}
