@@ -322,44 +322,57 @@ aside {
 
 #category {
   width: 100%;
-  background-image: linear-gradient(white,whitesmoke,lightgrey,grey);
+  background-color: whitesmoke;
   height: 500px;
   border-top: 1px solid;
   padding-top: 2%;
+  bottom: 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#category h3 {
+#category h1 {
   margin-left: 3%;
   height: 20px;
   text-shadow: 2px 2px lightblue;
   border-bottom: grey 1px solid;
-  padding-bottom: 3%;
+  padding-bottom: 7vh;
   width: 93%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#list {
-  margin: 2% 0 0 2%;
-  display: block;
-  list-style: none;
-  border-right: grey 1px solid;
-  width: 15%;
-  padding-right: 2%;
+.list {
+  width: 100%;
+  margin: 5vh 0 0;
+  list-style-image: url(../Icons/arrow-category.png);
 }
 
-#list li {margin-bottom: 43px; font-size: smaller;}
+.list li {
+  margin: 0 0 40px 6vw;
+  font-size: 15px;
+  width: 100%;
+}
 
-.pages-links:link, .pages-links:visited {
+.list p {
+  margin: 12vh 0 0 5vw;
+  font-weight: 650;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-color: #0169C7;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.list a {color: #0169C7;}
+
+.pages-links:link, .pages-links:visited{
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.3s linear;
-  border-radius: 10px;
-  border-left: 4px solid blue;
-  margin-left: 45px;
-  padding-left: 6%;
+  padding-left: 10px;
 }
 
-.pages-links:hover {color: rgb(28, 28, 252); box-shadow: 0; text-shadow: 0px 0px 1px rgb(28, 28, 252);}
+.pages-links:hover {color: rgb(28, 28, 252); text-shadow: 0px 0px 1px rgb(28, 28, 252);}
 .pages-links:active {color: #0169C7;}
 
 
