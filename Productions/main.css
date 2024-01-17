@@ -22,7 +22,7 @@ header {
   border-bottom: 10px solid darkblue;
   border-radius: 5px;
   font-size: larger;
-  background-image: linear-gradient(rgb(142, 211, 235),rgb(142, 211, 235),lightblue,whitesmoke);
+  background-image: linear-gradient(to bottom left,rgb(142, 211, 235),lightblue,whitesmoke);
   width: 100%;
   height: 200px;
   display: flex;
@@ -106,7 +106,7 @@ main {
   width: 195px;
   margin: 15vh 30px 30px 30px;
   border: 2px solid;
-  background-color: #0169C7;
+  background-image: linear-gradient(to top left, #0169c7,lightblue,whitesmoke);
   border-radius: 15px;
   padding-bottom: 2%;
 }
@@ -122,13 +122,13 @@ main {
 .news-links:link, .news-links:visited {
   text-shadow: 1px 1px 3px #37a2ff;
   color: black;
-  transition: 0.3s linear;
+  transition: 0.4s;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: smaller;
   text-align: center;
 }
 
-.news-links:hover { color: whitesmoke; text-shadow: 0px 0px 6px; box-shadow: 0; }
+.news-links:hover { color: rgb(36, 36, 255); text-shadow: 1px 1px 3px rgb(0, 119, 255) ;}
 .news-links:active {color: lightblue;}
 
 
@@ -175,9 +175,9 @@ aside {
 .sites[name="M"] {background-color: rgba(173, 216, 230, 0);}
 .sites[name="V"] {background-color: #9a000000;}
 .sites[name="S"] {background-color: #05dd0500;}
-.sites[name="M"]:hover {background-image: linear-gradient(rgb(142, 211, 235),lightblue,whitesmoke);}
+.sites[name="M"]:hover {background-image: linear-gradient(to bottom left, rgb(142, 211, 235),lightblue,whitesmoke);}
 .sites[name="V"]:hover {background-color: #9a0000; text-shadow: 2px 2px 6px lightcoral;}
-.sites[name="S"]:hover {background-image: linear-gradient(lime,palegreen,whitesmoke);}
+.sites[name="S"]:hover {background-image: linear-gradient(to bottom left, lime,palegreen,whitesmoke);}
 
 
 .icon-site {height: 70px; width: 95px; border-radius: 10px; margin-bottom: 10px;}
@@ -272,7 +272,7 @@ dl:hover {
 
 #menu {
   height: 30px;
-  background-image: linear-gradient(blue,darkblue,#034680,#0169C7);
+  background-image: linear-gradient(to left, blue,darkblue,#034680,#0169C7);
   width: 100%;
   font-size: small;
   border: 1px solid whitesmoke;
@@ -287,7 +287,6 @@ dl:hover {
     float: left;
     padding-top: 2px;
     width: 268px;
-    background-image: linear-gradient(blue,darkblue,#034680,#0169C7);
     border-radius: 10px;
 }
 
@@ -320,7 +319,7 @@ dl:hover {
 
 .display li ul {
   position: absolute;
-  bottom: 86px;
+  top: 28px;
   left: 0;
   display: none;
   width: 100%;
@@ -328,7 +327,7 @@ dl:hover {
 .display li:hover ul {display: block;  height: 0; border-radius: 10px;}
 
 .display li ul li { 
-  background-image: linear-gradient(blue,darkblue,#034680,#0169C7);
+  background-image: linear-gradient(to left, blue,darkblue,#034680,#0169C7);
   border: 1px solid whitesmoke;
   border-radius: 10px;
   display: block;
@@ -364,13 +363,13 @@ dl:hover {
   border-bottom: 1px solid grey;
   border-radius: 10px;
 }
-.LN-template[name="C"] {background-image: linear-gradient(white,lightblue,navy);}
-.LN-template[name="T"] {background-image: linear-gradient(white,lightcyan,lightseagreen);}
-.LN-template[name="J"] {background-image: linear-gradient(white,#fc2f4b,darkred);}
-.LN-template[name="F"] {background-image: linear-gradient(white,palegreen,lime);}
-.LN-template[name="E"] {background-image: linear-gradient(white, pink, magenta);}
-.LN-template[name="H"] {background-image: linear-gradient(white,coral,orange);}
-.LN-template[name="W"] {background-image: linear-gradient(white,lightgreen,seagreen);}
+.LN-template[name="C"] {background-image: linear-gradient(to top right, white,lightblue,navy);}
+.LN-template[name="T"] {background-image: linear-gradient(to top right, white,lightcyan,lightseagreen);}
+.LN-template[name="J"] {background-image: linear-gradient(to top right, white,#fc2f4b,darkred);}
+.LN-template[name="F"] {background-image: linear-gradient(to top right, white,palegreen,lime);}
+.LN-template[name="E"] {background-image: linear-gradient(to top right, white, pink, magenta);}
+.LN-template[name="H"] {background-image: linear-gradient(to top right, white,coral,orange);}
+.LN-template[name="W"] {background-image: linear-gradient(to top right, white,lightgreen,seagreen);}
 
 .LN-link {display: flex;}
 
@@ -462,7 +461,7 @@ dl:hover {
 #category {
   float: left;
   width: 100%;
-  background-color: whitesmoke;
+  background-image: linear-gradient(to top right, #f5f5f5 85%, #613060 90%, #a751a6 100%);
   height: 500px;
   border-top: 1px solid;
   padding-top: 2%;
@@ -475,7 +474,7 @@ dl:hover {
 #category h1 {
   margin-left: 3%;
   height: 20px;
-  text-shadow: 2px 2px lightblue;
+  text-shadow: 2px 2px lightpink;
   border-bottom: grey 1px solid;
   padding-bottom: 7vh;
   width: 93%;
