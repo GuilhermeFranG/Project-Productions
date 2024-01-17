@@ -1,23 +1,61 @@
-document.write("<dl>")
-day = new Date()
-hr = day.getHours()
+const currentTime = new Date();
 
-if ((hr == "1") || (hr == "2") || (hr == "3") || (hr == "4") || (hr == "5"))
-    document.write("<span>😊</span><h3>Seja bem vindo!</br>Tenha um ótimo dia!</h3>")
+const hours = currentTime.getHours();
+const minutes = currentTime.getMinutes();
+const seconds = currentTime.getSeconds();
+const month = currentTime.getMonth() + 1;
+const day = currentTime.getDate(); 
 
-if ((hr == "6") || (hr == "7") || (hr == "8") || (hr == "9") || (hr == "10") || (hr == "11"))
-    document.write("<span>✋</span><h3>Bom dia!</br>Temos novidades!</h3>")
+const containerElement = document.createElement("dl");
+const greetingElement = document.createElement("span");
+const messageElement = document.createElement("h3");
 
-if ((hr == "12") || (hr == "13") || (hr == "14"))
-    document.write("<span>🍽️</span><h3>Almoçar e informar-se!<br>Tenha uma ótima tarde.</h3>")
+containerElement.appendChild(greetingElement);
+containerElement.appendChild(messageElement);
 
-if ((hr == "15") || (hr == "16") || (hr == "17"))
-    document.write("<span>🌅</span><h3>Muito Boa Tarde!!!</br>Vamos ver o que há de novo!</h3>")
+if (hours < 6) {
+    greetingElement.innerHTML = "😊";
+    greetingElement.classList.add("greet");
+    messageElement.innerHTML = "Seja bem-vindo!<br>Tenha um ótimo dia!";
+} else if (hours < 12) {
+    greetingElement.innerHTML = "👋";
+    greetingElement.classList.add("greet");
+    messageElement.innerHTML = "Bom dia!<br>Temos novidades!";
+} else if (hours === 12 || (hours === 13 || (hours === 14 && minutes <= 30))) {
+    greetingElement.innerHTML = "🍽️";
+    greetingElement.classList.add("greet");
+    messageElement.innerHTML = "Almoçar e informar-se!<br>Tenha uma ótima tarde.";
+} else if (hours < 18) {
+    greetingElement.innerHTML = "🌅";
+    greetingElement.classList.add("greet");
+    messageElement.innerHTML = "Muito Boa Tarde!!!<br>Vamos ver o que há de novo!";
+} else if (hours < 19 || (hours < 20 || (hours < 23  && minutes <= 30))) {
+    greetingElement.innerHTML = "🌙";
+    greetingElement.classList.add("greet");
+    messageElement.innerHTML = "Muito Boa Noite!!!!<br>Como foi seu dia?";
+} else if (hours >= 23 || (hours <= 0 && minutes <= 59)) {
+    greetingElement.innerHTML = "🥱";
+    greetingElement.classList.add("greet");
+    messageElement.innerHTML = "Ainda acordado?<br>O que vamos ver?";
+}
 
-if ((hr == "18") || (hr == "19") || (hr == "20") || (hr == "21") || (hr == "22"))
-    document.write("<span>🌙</span><h3>Muito Boa Noite!!!!!</br>Como foi seu dia?</h3>")
+// Datas especiais \\
+else if (month === 12 && day === 24)  {
+    greetingElement.innerHTML = "🎁👀";
+    greetingElement.classList.add("greet")
+    messageElement.innerHTML = "É amanhã!<br>Feliz vespera de Natal!"
+} else if (month === 12 && (day > 24 && day < 26))  {
+    greetingElement.innerHTML = "🎄🎅";
+    greetingElement.classList.add("greet")
+    messageElement.innerHTML = "Feliz Natal e Boas Festas!!!";
+} else if (month === 2 && (day >= 10 && day <= 25))  {
+    greetingElement.innerHTML = "🎉🎊";
+    greetingElement.classList.add("greet")
+    messageElement.innerHTML = "Vamos festejar!<br>Viva o Carnaval!!!";
+} else if (month === 10 && (day >= 27 && day <= 31)) {
+    greetingElement.innerHTML = "💀🦇👹"
+    greetingElement.classList.add("greet")
+    messageElement.innerHTML = "Cuidado hein, eles vão te pegar!<br>Feliz Dias das Bruxas!"
+}
 
-if (hr == "23")
-    document.write("<span>🥱</span><h3>Ainda acordado?</br>O que vamos ver?</h3>")
-
-document.write("</dl>") 
+document.body.appendChild(containerElement);
