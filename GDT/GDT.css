@@ -15,7 +15,7 @@ a {text-decoration: none; cursor: pointer; color: rgb(131, 224, 255);}
 header {
     height: 145px;
     display: flex; flex-wrap: wrap;
-    background-image: linear-gradient(rgb(142, 211, 235), lightblue, white);
+    background-image: linear-gradient(to bottom left,rgb(142, 211, 235),lightblue,whitesmoke);
     background-size: cover;
     border-bottom: 2px solid;
 }
@@ -139,6 +139,6 @@ footer {
     font-size: x-small;
     color: rgb(216, 245, 255);
     text-shadow: 1px 2px 2px darkblue;
-    background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
+    background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
     border-top: 2px solid rgba(0, 0, 0, 0.829);
 }
