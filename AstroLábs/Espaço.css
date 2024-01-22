@@ -25,7 +25,7 @@ header {
     border-bottom: none;
     border-radius: 5px;
     font-size: larger;
-    background-image: linear-gradient(#033746,magenta,#ffd26c);
+    background-image: linear-gradient(to bottom left, #ffd26c 10%, magenta, #033746 90%);
     width: 100%;
     height: 260px;
     display: flex;
@@ -39,7 +39,6 @@ header a h1 {
     margin-top: 15%;
     color: pink;
     font-size: 35px;
-    text-shadow: 1px 1px 6px magenta;
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -120,15 +119,15 @@ main {
 }
 
 .news {
-    width: 53vw;
+    width: 55vw;
     margin: 6% 2% 2% 2%;
     padding-bottom: 3%;
     border-bottom: 1px solid grey;
     border-radius: 10px;
-    background-image: linear-gradient(white, pink, magenta);
+    background-image: linear-gradient(to top right, white, pink, magenta);
 }
 
-.news-links {display: flex;}
+.news-links {display: flex; cursor: default;}
 
 .news a img {
     max-height: 160px;
@@ -138,6 +137,7 @@ main {
     margin: 4% 0 0 3%;
     border-radius: 8px;
     border: 2px solid black;
+    cursor: pointer;
 }
 
 .news a h6 {
@@ -146,7 +146,7 @@ main {
     transition: 0.4s;
     color: black;
     transform: translateX(-9%);
-    text-shadow: 1px 1px 20px magenta;
+    cursor: pointer;
 }
 .news a h6:hover {color: #0169C7;}
 
@@ -154,13 +154,13 @@ main {
     margin: 9% 0 0 3%;
     width: 5%;
     color: #033746;
-    text-shadow: 1px 1px 12px #ffd5dc;
+    cursor: pointer;
 }
 
 #Astro-news button {
     font-size: large;
     font-weight: bolder;
-    margin: 15% 0 0 22%;
+    margin: 15% 0 0 25%;
     width: 70%;
     padding: 2%;
     color: whitesmoke;
@@ -233,9 +233,9 @@ aside {
 .sites[name="M"] {background-color: rgba(173, 216, 230, 0);}
 .sites[name="V"] {background-color: #9a000000;}
 .sites[name="S"] {background-color: #05dd0500;}
-.sites[name="M"]:hover {background-image: linear-gradient(rgb(142, 211, 235),lightblue,whitesmoke);}
+.sites[name="M"]:hover {background-image: linear-gradient(to bottom left, rgb(142, 211, 235),lightblue,whitesmoke);}
 .sites[name="V"]:hover {background-color: #9a0000; text-shadow: 2px 2px 6px lightcoral;}
-.sites[name="S"]:hover {background-image: linear-gradient(lime,palegreen,whitesmoke);}
+.sites[name="S"]:hover {background-image: linear-gradient(to bottom left, lime,palegreen,whitesmoke);}
 
 
 .icon-site {height: 70px; width: 95px; border-radius: 10px; margin-bottom: 10px;}
@@ -269,7 +269,7 @@ aside {
 
 #menu {
     height: 30px;
-    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
+    background-image: linear-gradient(to left, #033746,#015d72,#2f7d8f);
     width: 100%;
     font-size: small;
     border: 1px solid whitesmoke;
@@ -315,21 +315,15 @@ aside {
 
 .display li ul {
     position: absolute;
-    bottom: 86px;
+    top: 28px;
     left: 0;
     display: none;
     width: 100%;
 }
-
-.display li:hover ul {
-    display: block;
-    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
-    height: 0;
-    border-radius: 10px;
-}
+.display li:hover ul {display: block; height: 0; border-radius: 10px;}
 
 .display li ul li {
-    background-image: linear-gradient(#033746,#015d72,#2f7d8f);
+    background-image: linear-gradient(to left, #033746,#015d72,#2f7d8f);
     border: 1px solid whitesmoke;
     border-radius: 10px;
     display: block;
@@ -341,7 +335,7 @@ aside {
 
 #category {
     width: 100%;
-    background-color: whitesmoke;
+    background-image: linear-gradient(to top right, #f5f5f5 85%, #613060 90%, #a751a6 100%);
     height: 500px;
     border-top: 1px solid;
     padding-top: 2%;
@@ -357,7 +351,7 @@ aside {
     text-shadow: 2px 2px lightblue;
     border-bottom: grey 1px solid;
     padding-bottom: 7vh;
-    width: 93%;
+    width: 44%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
