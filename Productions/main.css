@@ -124,11 +124,11 @@ main {
   color: black;
   transition: 0.4s;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: smaller;
+  font-size: small;
   text-align: center;
 }
 
-.news-links:hover { color: rgb(36, 36, 255); text-shadow: 1px 1px 3px rgb(0, 119, 255) ;}
+.news-links:hover { color: rgb(36, 36, 255); text-shadow: 1px 1px 3px rgb(0, 119, 255);}
 .news-links:active {color: lightblue;}
 
 
@@ -352,13 +352,13 @@ dl:hover {
   color: #0169C7;
   border-bottom: 1px solid grey;
   padding: 0 0 1% 1%;
-  margin-left: 2%;
+  margin: -4% 2% 8% 3%;
   width: 50%;
 }
 
 .LN-template {
-  width: 85%;
-  margin: 2%;
+  width: 88%;
+  margin: 3% 2% 3% 3%;
   padding-bottom: 3%;
   border-bottom: 1px solid grey;
   border-radius: 10px;
@@ -371,7 +371,7 @@ dl:hover {
 .LN-template[name="H"] {background-image: linear-gradient(to top right, white,coral,orange);}
 .LN-template[name="W"] {background-image: linear-gradient(to top right, white,lightgreen,seagreen);}
 
-.LN-link {display: flex;}
+.LN-link {display: flex; cursor: default;}
 
 #last-news a img {
   max-height: 175px;
@@ -381,6 +381,7 @@ dl:hover {
   margin: 4% 0 0 3%; 
   border-radius: 12px;
   border: 2px solid black;
+  cursor: pointer;
 }
 
 #last-news a h6 { 
@@ -389,10 +390,11 @@ dl:hover {
   transition: 0.4s;
   color: black;
   transform: translateX(-9%);
+  cursor: pointer;
 }
 #last-news a h6:hover {color: #0169C7;}
 
-.news-type { margin: 12% 0 0 3%; width: 5%; }
+.news-type { margin: 12% 0 0 3%; width: 5%; cursor: pointer;}
 .news-type[name="C"] {color: #000080;}
 .news-type[name="T"] {color: darkcyan;}
 .news-type[name="J"] {color: rgb(168, 0, 34);}
@@ -404,8 +406,8 @@ dl:hover {
 #last-news button {
   font-size: large;
   font-weight: bolder;
-  margin: 12% 0% 0% 18%;
-  width: 45%;
+  margin: 5% 0% 0% 22%;
+  width: 50%;
   padding: 2%;
   color: whitesmoke;
   background-color: #157fdb;
@@ -477,7 +479,7 @@ dl:hover {
   text-shadow: 2px 2px lightpink;
   border-bottom: grey 1px solid;
   padding-bottom: 7vh;
-  width: 93%;
+  width: 45%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -528,7 +530,7 @@ footer {
   color: rgb(216, 245, 255);
   text-shadow: 1px 2px 2px darkblue;
   font-weight: bolder;
-  background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
+  background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
   border-top: 2px solid rgba(0, 0, 0, 0.829);
 }
 
