@@ -164,20 +164,19 @@ main {
     width: 70%;
     padding: 2%;
     color: whitesmoke;
-    background-color: #fb7a51;
+    background-color: #a12b9f;
     border-radius: 10px;
     border: none;
     transition: 0.5s;
 }
 #Astro-news button:hover {
-    background-color: #fc9b57;
+    background-color: #fb7a51;
     color: white;
     text-shadow: 1px 1px 1px black;
     cursor: pointer;
 }
 #Astro-news button:active {
-    background-color: #f55d2e;
-    color: black;
+    background-color: #033746;
     text-shadow: none;
 }
 
@@ -348,27 +347,31 @@ aside {
 #category h1 {
     margin-left: 3%;
     height: 20px;
-    text-shadow: 2px 2px lightblue;
+    text-shadow: 2px 2px lightpink;
     border-bottom: grey 1px solid;
     padding-bottom: 7vh;
-    width: 44%;
+    width: 45%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .list {
     width: 100%;
-    margin: 5vh 0 0;
-    list-style-image: url(../Icons/arrow-category.png);
+    list-style: none;
 }
 
 .list li {
-    margin: 0 0 40px 6vw;
-    font-size: 15px;
+    margin: 0 0 15px 5vw;
+    font-size: 14px;
     width: 100%;
+}
+.list li::before {
+    content: '\27A3';
+    color: #954994;
+    font-size: 26px;
 }
 
 .list p {
-    margin: 12vh 0 0 5vw;
+    margin: 10vh 0 0 5vw;
     font-weight: 650;
     font-size: 14px;
     text-decoration: underline;
@@ -385,7 +388,7 @@ aside {
     padding-left: 10px;
 }
 
-.pages-links:hover {color: rgb(28, 28, 252); text-shadow: 0px 0px 1px rgb(28, 28, 252);}
+.pages-links:hover {color: #a12b9f; text-shadow: 0px 0px 1px #954994;}
 .pages-links:active {color: #0169C7;}
 
 
@@ -393,7 +396,7 @@ aside {
 footer {
     bottom: 0;
     width: 100%;
-    padding: 2px;
+    padding: 2vh 0 2vh;
     text-align: center;
     font-size: x-small;
     box-shadow: 0;
