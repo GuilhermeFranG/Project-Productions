@@ -13,7 +13,28 @@ const messageElement = document.createElement("h3");
 containerElement.appendChild(greetingElement);
 containerElement.appendChild(messageElement);
 
-if (hours < 6) {
+// Datas especiais \\
+if (month === 12 && day === 24)  {
+    greetingElement.innerHTML = "🎁👀";
+    greetingElement.classList.add("greet")
+    messageElement.innerHTML = "É amanhã!<br>Feliz véspera de Natal!"
+} else if (month === 12 && (day > 24 && day < 26))  {
+    greetingElement.innerHTML = "🎄🎅";
+    greetingElement.classList.add("greet")
+    messageElement.innerHTML = "Feliz Natal e Boas Festas!!!";
+} else if (month === 2 && (day >= 10 && day <= 25))  {
+    greetingElement.innerHTML = "🎉🎊";
+    greetingElement.classList.add("greet")
+    messageElement.innerHTML = "Vamos festejar!<br>Viva o Carnaval!!!";
+} else if (month === 10 && (day >= 27 && day <= 31)) {
+    greetingElement.innerHTML = "💀🦇👹"
+    greetingElement.classList.add("greet")
+    messageElement.innerHTML = "Cuidado hein, eles vão te pegar!<br>Feliz Dias das Bruxas!"
+}
+
+
+// Horários Cotidianos \\
+else if (hours < 6) {
     greetingElement.innerHTML = "😊";
     greetingElement.classList.add("greet");
     messageElement.innerHTML = "Seja bem-vindo!<br>Tenha um ótimo dia!";
@@ -37,25 +58,6 @@ if (hours < 6) {
     greetingElement.innerHTML = "🥱";
     greetingElement.classList.add("greet");
     messageElement.innerHTML = "Ainda acordado?<br>O que vamos ver?";
-}
-
-// Datas especiais \\
-else if (month === 12 && day === 24)  {
-    greetingElement.innerHTML = "🎁👀";
-    greetingElement.classList.add("greet")
-    messageElement.innerHTML = "É amanhã!<br>Feliz véspera de Natal!"
-} else if (month === 12 && (day > 24 && day < 26))  {
-    greetingElement.innerHTML = "🎄🎅";
-    greetingElement.classList.add("greet")
-    messageElement.innerHTML = "Feliz Natal e Boas Festas!!!";
-} else if (month === 2 && (day >= 10 && day <= 25))  {
-    greetingElement.innerHTML = "🎉🎊";
-    greetingElement.classList.add("greet")
-    messageElement.innerHTML = "Vamos festejar!<br>Viva o Carnaval!!!";
-} else if (month === 10 && (day >= 27 && day <= 31)) {
-    greetingElement.innerHTML = "💀🦇👹"
-    greetingElement.classList.add("greet")
-    messageElement.innerHTML = "Cuidado hein, eles vão te pegar!<br>Feliz Dias das Bruxas!"
 }
 
 document.body.appendChild(containerElement);
