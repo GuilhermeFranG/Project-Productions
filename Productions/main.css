@@ -85,7 +85,7 @@ header h2 { transform: translateY(-11px); }
   background-color: whitesmoke;
   border-top: 3px solid black;
   border-bottom: 1px solid grey;
-  height: 121vh; 
+  height: 125vh; 
 }
 
 main, aside{
@@ -143,6 +143,8 @@ aside {
   justify-content: center;
   padding-left: 2vw;
   background-color: whitesmoke;
+  border-left: 1px solid grey;
+  margin: 10px 0 10px 0;
 }
 
 #channels h3 {

@@ -22,7 +22,7 @@ if (month === 12 && day === 24)  {
     greetingElement.innerHTML = "🎄🎅";
     greetingElement.classList.add("greet")
     messageElement.innerHTML = "Feliz Natal e Boas Festas!!!";
-} else if (month === 2 && (day >= 10 && day <= 25))  {
+} else if (month === 2 && (day >= 10 && day <= 20))  {
     greetingElement.innerHTML = "🎉🎊";
     greetingElement.classList.add("greet")
     messageElement.innerHTML = "Vamos festejar!<br>Viva o Carnaval!!!";
