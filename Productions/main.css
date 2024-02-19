@@ -153,9 +153,9 @@ aside {
   text-shadow: 2px 2px lightblue;
 }
 
-#share {padding-right: 2vw; margin-top: 5px;}
+#share-container {padding-right: 2vw; margin-top: 5px;}
 
-.sites, #share {margin-left: 3vw;}
+.sites, #share-container {margin-left: 3vw;}
 
 .sites {
   width: 55%;
@@ -184,7 +184,7 @@ aside {
 
 .sites h5 {color: black;}
 
-#share h4 {
+#share-container h4 {
   color: #0169C7;
   padding-bottom: 1vh;
   border-bottom: 1px solid grey;
@@ -194,7 +194,7 @@ aside {
   font-size: 14px;
 }
 
-.button-channels {
+.share-btns {
   border-radius: 2px;
   height: 42px; 
   width: 35px;
@@ -204,7 +204,7 @@ aside {
 
 
 
-
+/* Estilização script de mensagem de bem-vindo */
 dl {
   font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
   font-size: large;
@@ -338,17 +338,17 @@ dl:hover {
 
 
 
-#container--L_A {width: 100%; height: 450vh;}
+#last-news_adds--content {width: 100%; height: 450vh;}
 
 
-#last-news {
+#last_news {
   width: 60%;
   height: 100%;
   padding-bottom: 2%;
   float: left;
 }
 
-#last-news h2 {
+#last_news h2 {
   text-shadow: 2px 2px lightblue;
   color: #0169C7;
   border-bottom: 1px solid grey;
@@ -357,24 +357,24 @@ dl:hover {
   width: 50%;
 }
 
-.LN-template {
+.last_news--template {
   width: 88%;
   margin: 3% 2% 3% 3%;
   padding-bottom: 3%;
   border-bottom: 1px solid grey;
   border-radius: 10px;
 }
-.LN-template[name="C"] {background-image: linear-gradient(to top right, white,lightblue,navy);}
-.LN-template[name="T"] {background-image: linear-gradient(to top right, white,lightcyan,lightseagreen);}
-.LN-template[name="J"] {background-image: linear-gradient(to top right, white,#fc2f4b,darkred);}
-.LN-template[name="F"] {background-image: linear-gradient(to top right, white,palegreen,lime);}
-.LN-template[name="E"] {background-image: linear-gradient(to top right, white, pink, magenta);}
-.LN-template[name="H"] {background-image: linear-gradient(to top right, white,coral,orange);}
-.LN-template[name="W"] {background-image: linear-gradient(to top right, white,lightgreen,seagreen);}
+.last_news--template[name="C"] {background-image: linear-gradient(to top right, white,lightblue,navy);}
+.last_news--template[name="T"] {background-image: linear-gradient(to top right, white,lightcyan,lightseagreen);}
+.last_news--template[name="J"] {background-image: linear-gradient(to top right, white,#fc2f4b,darkred);}
+.last_news--template[name="F"] {background-image: linear-gradient(to top right, white,palegreen,lime);}
+.last_news--template[name="E"] {background-image: linear-gradient(to top right, white, pink, magenta);}
+.last_news--template[name="H"] {background-image: linear-gradient(to top right, white,coral,orange);}
+.last_news--template[name="W"] {background-image: linear-gradient(to top right, white,lightgreen,seagreen);}
 
-.LN-link {display: flex; cursor: default;}
+.last_news-link {display: flex; cursor: default;}
 
-#last-news a img {
+#last_news a img {
   max-height: 175px;
   max-width: 260px;
   height: 175vh;
@@ -385,7 +385,7 @@ dl:hover {
   cursor: pointer;
 }
 
-#last-news a h6 { 
+#last_news a h6 { 
   font-size: 15px;
   margin-top: 16%;
   transition: 0.4s;
@@ -393,7 +393,7 @@ dl:hover {
   transform: translateX(-9%);
   cursor: pointer;
 }
-#last-news a h6:hover {color: #0169C7;}
+#last_news a h6:hover {color: #0169C7;}
 
 .news-type { margin: 12% 0 0 3%; width: 5%; cursor: pointer;}
 .news-type[name="C"] {color: #000080;}
@@ -404,7 +404,7 @@ dl:hover {
 .news-type[name="H"] {color: orangered;}
 .news-type[name="W"] {color: darkgreen;}
 
-#last-news button {
+#last_news button {
   font-size: large;
   font-weight: bolder;
   margin: 5% 0% 0% 22%;
@@ -416,7 +416,7 @@ dl:hover {
   border: none;
   transition: 0.5s;
 }
-#last-news button:hover {
+#last_news button:hover {
   background-color: #3e92ff;
   color: white;
   text-shadow: 1px 1px 1px black;
