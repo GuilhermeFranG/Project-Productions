@@ -10,8 +10,6 @@
 
 body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-::selection {color: lightgreen; background-color: #0dbd39; text-shadow: 0px 0px 18px whitesmoke;}
-
 a:link {text-decoration: none; color: purple;}
 a:visited {color: rgb(255, 0, 0);}
 

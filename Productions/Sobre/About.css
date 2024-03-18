@@ -8,8 +8,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-::selection {color: #000080; background-color: #0169C7; text-shadow: 0px 0px 18px whitesmoke;}
-
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 a {text-decoration: none;}
