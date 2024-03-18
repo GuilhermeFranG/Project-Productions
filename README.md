@@ -3,7 +3,7 @@
 *Um projeto meu, sobre um site de notícias.* \
 `(Tudo nesse projeto tem como objetivo treinar programção, não sendo algo oficial)`
 
-## **By GDT (2023)** 
+## **By GDT** 
 
 **Productions** é um site de notícias atualizadas diariamente, buscando informar todos seus usuários com notícias do mundo todo. 
 
